@@ -1,0 +1,10 @@
+05-Mar-2019 10:31:29.093 zoneload: info: managed-keys-zone: loaded serial 0
+05-Mar-2019 10:31:29.100 zoneload: info: zone acme.com/IN: loaded serial 2016021502
+05-Mar-2019 10:31:29.100 general: notice: all zones loaded
+05-Mar-2019 10:31:29.100 general: notice: running
+05-Mar-2019 10:31:29.100 notify: info: zone acme.com/IN: sending notifies (serial 2016021502)
+05-Mar-2019 10:33:46.557 general: info: shutting down
+05-Mar-2019 10:33:46.563 network: info: no longer listening on ::#53
+05-Mar-2019 10:33:46.564 network: info: no longer listening on 127.0.0.1#53
+05-Mar-2019 10:33:46.564 network: info: no longer listening on 192.168.5.9#53
+05-Mar-2019 10:33:46.619 general: notice: exiting
