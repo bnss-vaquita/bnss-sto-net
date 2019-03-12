@@ -1,0 +1,10 @@
+10-Mar-2019 01:49:18.161 security: info: client @0x562cbc7f1d20 192.168.50.6#54323 (.): query (cache) './NS/IN' denied
+10-Mar-2019 01:49:31.634 security: info: client @0x562cbc7f1d20 192.168.50.6#58898 (mysql.acme.co): query (cache) 'mysql.acme.co/A/IN' denied
+10-Mar-2019 01:59:48.449 security: info: client @0x562cbc7e30c0 192.168.50.6#46607 (mysql.acme.co): query (cache) 'mysql.acme.co/A/IN' denied
+10-Mar-2019 02:07:11.078 security: info: client @0x562cbc7e30c0 192.168.1.143#46998 (.): query (cache) './NS/IN' denied
+10-Mar-2019 02:07:27.787 security: info: client @0x562cbc76cdc0 192.168.1.143#49740 (google.com): query (cache) 'google.com/A/IN' denied
+10-Mar-2019 02:07:33.311 security: info: client @0x562cbc76cdc0 192.168.1.143#55441 (google.com): query (cache) 'google.com/A/IN' denied
+10-Mar-2019 02:07:37.707 security: info: client @0x562cbc76cdc0 192.168.1.143#47009 (google.it): query (cache) 'google.it/A/IN' denied
+10-Mar-2019 02:09:03.995 security: info: client @0x562cbc7d4460 192.168.1.143#40935 (google.it): query (cache) 'google.it/A/IN' denied
+10-Mar-2019 02:09:22.167 security: info: client @0x562cbc7d4460 192.168.1.143#57860 (google.it): query (cache) 'google.it/A/IN' denied
+10-Mar-2019 02:17:47.944 security: info: client @0x562cbc5b0340 192.168.1.143#57591 (google.it): query (cache) 'google.it/A/IN' denied

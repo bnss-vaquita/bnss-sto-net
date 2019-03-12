@@ -1,0 +1,13 @@
+TODO
+
++ create user for auth_user accessing radius DB
++ salt password users
+
+- assign IP addresses 
++ openVPN test and RADIUS auth
+
++ mirror traffic from router to suricata
++ install ELK
+- ELK on all container
+
+- write report

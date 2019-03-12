@@ -4,7 +4,7 @@ version: '3'
 services:
   dns:
     container_name: ${COMPOSE_PROJECT_NAME}_dns_server
-    hostname: ${COMPOSE_PROJECT_NAME}_dns_server
+    hostname: ns1.acme.com
     restart: always
     build:
       context: ./dns
@@ -14,6 +14,10 @@ services:
         - FORWARDER=${FORWARDER}
         - OPENVPN_VLAN1=${OPENVPN_VLAN1}
         - DB_VLAN1=${DB_VLAN1}
+        - AUTH_SERVER_VLAN1=${AUTH_SERVER_VLAN1}
+        - ELASTIC_VLAN1=${ELASTIC_VLAN1}
+        - KIBANA_VLAN1=${KIBANA_VLAN1}
+        - LOGSTASH_VLAN1=${LOGSTASH_VLAN1}
     networks:
       sto_vlan1:
         ipv4_address: ${DNS_VLAN1}
@@ -23,33 +27,35 @@ services:
       - "/etc/localtime:/etc/localtime:ro"
     ports:
       - 53:53/udp
+    depends_on:
+      - elasticsearch
+      - kibana
 
   openvpn_server:
     container_name: ${COMPOSE_PROJECT_NAME}_openvpn_server
-    hostname: ${COMPOSE_PROJECT_NAME}_openvpn_server
+    hostname: vpnserver.acme.com
     restart: always
     cap_add:
-      - "NET_ADMIN"
+     - NET_ADMIN
     dns:
       - ${DNS_VLAN1}
     build:
-      context: ./openvpn
-      args:
-        - VLAN_VPN_CLIENTS_SUBNET=${VLAN_VPN_CLIENTS_SUBNET}
-        - DNS_SERVER_IP=${DNS_VLAN1}
+      context: ./docker-openvpn
     networks:
        sto_vlan1:
         ipv4_address: ${OPENVPN_VLAN1}
     ports:
       - "1194:1194/udp"
     volumes:
-      - "./openvpn/data/logs:/etc/openvpn/logs"
+      #- ./openvpn-data/conf/logs:/etc/openvpn/logs
+      - ./openvpn-data/conf:/etc/openvpn
+      - ./openvpn-data/script:/tmp/script
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
 
   radius_server:
     container_name: ${COMPOSE_PROJECT_NAME}_radius
-    hostname: ${COMPOSE_PROJECT_NAME}_radius
+    hostname: radius.acme.com
     restart: always
     dns:
       - ${DNS_VLAN1}
@@ -91,6 +97,10 @@ services:
         - MYSQL_LOG_DIR=${MYSQL_LOG_DIR}
         - RADIUS_USR_PASSWORD=${RADIUS_USR_PASSWORD}
         - RADIUS_VLAN1=${RADIUS_VLAN1}
+        - AUTH_SERVER_USER=${AUTH_SERVER_USER}
+        - AUTH_SERVER_USR_PASSWORD=${AUTH_SERVER_USR_PASSWORD}
+        - OPENVPN_DB_PASS=${OPENVPN_DB_PASS}
+        - OPENVPN_DB_USER=${OPENVPN_DB_USER}
     networks:
       sto_vlan1:
         ipv4_address: ${DB_VLAN1}
@@ -100,16 +110,23 @@ services:
       # TODO FIX LOCALTIME IN MYSQL CONTAINER
       #- "/etc/timezone:/etc/timezone:ro"
       #- "/etc/localtime:/etc/localtime:ro"
+    ports:
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MYSQL_CONTAINER_USER: "mysql"
       MYSQL_CONTAINER_GROUP: "mysql"
       MYSQL_DATABASE: "radius"
 
+  # Intrusion Detection System
   suricata:
+    container_name: ${COMPOSE_PROJECT_NAME}_suricata
+    hostname: ids.acme.com
+    restart: always
+    dns:
+      - ${DNS_VLAN1}
     build:
       context: ./ids
-    container_name: ${COMPOSE_PROJECT_NAME}_suricata
     cap_add:
       - NET_ADMIN
     network_mode: "host"
@@ -117,15 +134,75 @@ services:
       - ./ids/logs/:/var/log/suricata
   #    - ./ids/rules/my.rules:/var/lib/suricata/rules/my.rules
     entrypoint: /entrypoint.sh
-  
-  elk:
-    container_name:  ${COMPOSE_PROJECT_NAME}_elk
-    image: sebp/elk
+
+###### ELK STACK
+  elasticsearch:
+    container_name: ${COMPOSE_PROJECT_NAME}_elasticsearch
+    hostname: elastic.acme.com
+    restart: always
+    dns:
+      - ${DNS_VLAN1}
+    build:
+      context: elasticsearch/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx512m -Xms512m"
+    networks:
+      sto_vlan1:
+        ipv4_address: ${ELASTIC_VLAN1}
+
+  logstash:
+    container_name: ${COMPOSE_PROJECT_NAME}_logstash
+    hostname: logstash.acme.com
+    restart: always
+    dns:
+      - ${DNS_VLAN1}
+    build:
+      context: logstash/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - "5000:5000"
+      - "9600:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
+    networks:
+      sto_vlan1:
+        ipv4_address: ${LOGSTASH_VLAN1}
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    container_name: ${COMPOSE_PROJECT_NAME}_kibana
+    hostname: kibana.acme.com
+    restart: always
+    dns:
+      - ${DNS_VLAN1}
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
     ports:
       - "5601:5601"
-      - "9200:9200"
-      - "5044:5044"
-
+    networks:
+      sto_vlan1:
+        ipv4_address: ${KIBANA_VLAN1}
+    depends_on:
+      - elasticsearch
+    environment:
+      SERVER_NAME: kibana.acme.com
+ 
 networks:
   sto_vlan1:
     driver: bridge

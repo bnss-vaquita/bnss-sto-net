@@ -60,8 +60,23 @@ chown -R ${USER}:${GROUP} /var/bind /etc/bind /var/run/named /var/log/named
 chmod -R o-rwx /var/bind /etc/bind /var/run/named /var/log/named
 echo "[DONE]"
 
+
+
+#
+# Start filebeat.
+#
+cd /tmp/filebeat-6.6.1-linux-x86_64 && export PATH=$PATH:`pwd`
+filebeat test config && \
+filebeat setup -e \
+    -E output.logstash.enabled=false \
+    -E output.elasticsearch.hosts=192.168.5.20:9200 \
+    -E setup.kibana.host=192.168.5.21:5601  && \
+exec filebeat -e &
+
+
+
 #
 # Start named.
 #
 echo "Start named... "
-exec ${COMMAND}
+exec ${COMMAND} 

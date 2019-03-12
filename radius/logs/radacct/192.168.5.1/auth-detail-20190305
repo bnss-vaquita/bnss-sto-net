@@ -1,0 +1,164 @@
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x0216001201746573744061636d652e636f6d
+	Message-Authenticator = 0x6f4b3b05e99668f1c3a5c79e1f32990e
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x021700b2150016030100a7010000a303039beb9d8b7d4c8e07d9de193f4c3510cbecf53d21dcc10aa51b35a06d3c7095e3000038c02cc030009fcca9cca8ccaac02bc02f009ec024c028006bc023c0270067c00ac0140039c009c0130033009d009c003d003c0035002f00ff01000042000b000403000102000a000a0008001d0017001900180016000000170000000d0020001e060106020603050105020503040104020403030103020303020102020203
+	State = 0xf3912ce8f386397e43dc3694af70e549
+	Message-Authenticator = 0x051c52a85bdc63fe88bae220175a7460
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x021800061500
+	State = 0xf3912ce8f289397e43dc3694af70e549
+	Message-Authenticator = 0x4fdb8e6354838c4e3fb7c5a85e2cd024
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x021900061500
+	State = 0xf3912ce8f188397e43dc3694af70e549
+	Message-Authenticator = 0x43e9c2f73df492b301edc16a9e049520
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x021a00a415001603030066100000626104f1311d2de305474a83666b46acb5dbb02e8850d4141072ac9ed8f777ccf385ed7698b51d2fb2503b5f54837b8cbef9fe1c07616c383f0637a60be4c9597717e7a6e0ae7bb046b4eca2ee62866975acd6a3725495d8c410c400e47fbf903b4a181403030001011603030028d7ad78397832d9d11dac911567eb265a8eacd9095f9867bb7212a6e16ba3f4457d837432ea605ca5
+	State = 0xf3912ce8f08b397e43dc3694af70e549
+	Message-Authenticator = 0x2db39ad42829543c273d1ebe5dce97ca
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 14:26:34 2019
+	Packet-Type = Access-Request
+	User-Name = "test@acme.com"
+	NAS-IP-Address = 192.168.10.1
+	Called-Station-Id = "58-EF-68-0D-B0-96:STO-dd-wrt-2"
+	NAS-Port-Type = Wireless-802.11
+	Service-Type = Framed-User
+	NAS-Port = 1
+	Calling-Station-Id = "B8-8A-60-61-28-9E"
+	Connect-Info = "CONNECT 54Mbps 802.11g"
+	Acct-Session-Id = "B24A3F5E57ABADFB"
+	WLAN-Pairwise-Cipher = 5304836
+	WLAN-Group-Cipher = 5304836
+	WLAN-AKM-Suite = 1027073
+	WLAN-Group-Mgmt-Cipher = 1027078
+	Framed-MTU = 1400
+	EAP-Message = 0x021b005315001703030048d7ad78397832d9d2e5e485202ee750ff21a86e93243a4504923d342b2d2f037e2f7620f17f6ff6d264d9612823133473dca0135084ba8440ab99247d6b023a19e749a8a8793345dd
+	State = 0xf3912ce8f78a397e43dc3694af70e549
+	Message-Authenticator = 0x1379af6a478c2829890434a7899ea719
+	Event-Timestamp = "Mar  5 2019 14:26:34 CET"
+	Timestamp = 1551792394
+
+Tue Mar  5 16:02:59 2019
+	Packet-Type = Access-Request
+	User-Name = "test1234@acme.com"
+	NAS-IP-Address = 127.0.0.1
+	NAS-Port = 0
+	Message-Authenticator = 0xaf4b4d5910cb8154db57a56579ef62d7
+	Framed-Protocol = PPP
+	Service-Type = Framed-User
+	Event-Timestamp = "Mar  5 2019 16:02:59 CET"
+	Timestamp = 1551798179
+
+Tue Mar  5 16:03:09 2019
+	Packet-Type = Access-Request
+	User-Name = "test1234@acme.com"
+	NAS-IP-Address = 127.0.0.1
+	NAS-Port = 0
+	Message-Authenticator = 0x9950d9bf4e9230d0e00e499cbbb81975
+	Framed-Protocol = PPP
+	Service-Type = Framed-User
+	Event-Timestamp = "Mar  5 2019 16:03:09 CET"
+	Timestamp = 1551798189
+
+Tue Mar  5 18:40:15 2019
+	Packet-Type = Access-Request
+	User-Name = "test1@acme.com"
+	NAS-IP-Address = 127.0.0.1
+	NAS-Port = 0
+	Message-Authenticator = 0x0232bc22ae20b32c28473656ea20de97
+	Framed-Protocol = PPP
+	Service-Type = Framed-User
+	Event-Timestamp = "Mar  5 2019 18:40:15 CET"
+	Timestamp = 1551807615
+

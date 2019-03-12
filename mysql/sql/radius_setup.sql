@@ -11,20 +11,48 @@
 #
 #  Create default administrator for RADIUS
 #
-CREATE USER 'radius'@'%';
+CREATE USER 'radius'@'RADIUS_VLAN1';
 #SET PASSWORD FOR 'radius'@'RADIUS_VLAN1' = PASSWORD('RADIUS_USR_PASSWORD');
-SET PASSWORD FOR 'radius'@'%' = 'RADIUS_USR_PASSWORD';
+SET PASSWORD FOR 'radius'@'RADIUS_VLAN1' = 'RADIUS_USR_PASSWORD';
 
-ALTER USER 'radius'@'%' IDENTIFIED WITH mysql_native_password BY 'RADIUS_USR_PASSWORD';
+ALTER USER 'radius'@'RADIUS_VLAN1' IDENTIFIED WITH mysql_native_password BY 'RADIUS_USR_PASSWORD';
 
 # The server can read any table in SQL
-GRANT SELECT ON radius.* TO 'radius'@'%';
+GRANT SELECT ON radius.* TO 'radius'@'RADIUS_VLAN1';
 
 # The server can write to the accounting and post-auth logging table.
 #
 #  i.e.
-GRANT ALL on radius.radacct TO 'radius'@'%';
-GRANT ALL on radius.radpostauth TO 'radius'@'%';
+GRANT ALL on radius.radacct TO 'radius'@'RADIUS_VLAN1';
+GRANT ALL on radius.radpostauth TO 'radius'@'RADIUS_VLAN1';
+
 INSERT into radius.radcheck (username,attribute,op,value) values("test@acme.com", "Cleartext-Password", ":=", "test");
+INSERT into radius.radcheck (username,attribute,op,value) values("carlo@acme.com", "SSHA2-256-Password", ":=", "eje4XIkY6sGakInA+loqtNzj+QUo3N7sEIsj3fNge5lzYWx0");
+INSERT into radius.radcheck (username,attribute,op,value) values("test2@acme.com", "SSHA2-256-Password", ":=", "ag6J2U52nmn7gkQM2h4eXEYQnHON7W9DyyGKxUSiAsFzYWx0c2FsdHNhbHQ=");
+
+FLUSH PRIVILEGES;
+
+
+# for authentication server
+
+CREATE USER 'AUTH_SERVER_USER'@'%';
+SET PASSWORD FOR 'AUTH_SERVER_USER'@'%' = 'AUTH_SERVER_USR_PASSWORD';
+
+ALTER USER 'AUTH_SERVER_USER'@'%' IDENTIFIED WITH mysql_native_password BY 'AUTH_SERVER_USR_PASSWORD';
+
+# The server can read any table in SQL
+GRANT SELECT ON radius.* TO 'AUTH_SERVER_USER'@'%';
+
+FLUSH PRIVILEGES;
+
+# for openvpn radius authentication plugin
+
+CREATE USER 'OPENVPN_DB_USER'@'%';
+SET PASSWORD FOR 'OPENVPN_DB_USER'@'%' = 'OPENVPN_DB_PASS';
+
+ALTER USER 'OPENVPN_DB_USER'@'%' IDENTIFIED WITH mysql_native_password BY 'OPENVPN_DB_PASS';
+
+# The server can read any table in SQL
+GRANT SELECT ON radius.radcheck TO 'OPENVPN_DB_USER'@'%';
 
 FLUSH PRIVILEGES;

@@ -1,2 +1,88 @@
 5/3/2019 -- 09:32:13 - <Notice> - This is Suricata version 4.0.4 RELEASE
 5/3/2019 -- 09:32:21 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 09:42:53 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 09:43:02 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 10:04:03 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 10:04:12 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 10:11:54 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 10:12:02 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 10:16:13 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 10:16:20 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 13:26:21 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 13:26:29 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 13:45:41 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 13:45:49 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 14:32:28 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 14:32:36 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 14:35:42 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 14:35:51 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 14:56:32 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 14:56:41 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 15:12:00 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 15:12:09 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 15:17:44 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 15:17:52 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 15:20:01 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 15:20:08 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 15:27:15 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 15:27:23 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 15:29:36 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 15:29:44 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:26 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 16:10:31 - <Error> - [ERRCODE: SC_ERR_AFP_READ(191)] - Error reading data from iface 'wlp59s0': (100u) Network is down
+5/3/2019 -- 17:03:58 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 17:04:06 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 18:05:13 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 18:05:20 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 18:22:32 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 18:22:40 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 23:44:25 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 23:44:38 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+5/3/2019 -- 23:54:07 - <Notice> - This is Suricata version 4.0.4 RELEASE
+5/3/2019 -- 23:54:20 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+7/3/2019 -- 19:06:27 - <Notice> - This is Suricata version 4.0.4 RELEASE
+7/3/2019 -- 19:06:40 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+7/3/2019 -- 19:07:28 - <Notice> - This is Suricata version 4.0.4 RELEASE
+7/3/2019 -- 19:07:41 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+7/3/2019 -- 20:32:25 - <Notice> - This is Suricata version 4.0.4 RELEASE
+7/3/2019 -- 20:32:35 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+8/3/2019 -- 12:46:45 - <Notice> - This is Suricata version 4.0.4 RELEASE
+8/3/2019 -- 12:46:56 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+8/3/2019 -- 14:57:11 - <Notice> - This is Suricata version 4.0.4 RELEASE
+8/3/2019 -- 14:57:18 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+10/3/2019 -- 01:29:39 - <Notice> - This is Suricata version 4.0.4 RELEASE
+10/3/2019 -- 01:29:46 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+10/3/2019 -- 02:07:12 - <Notice> - This is Suricata version 4.0.4 RELEASE
+10/3/2019 -- 02:07:25 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+10/3/2019 -- 02:21:29 - <Notice> - This is Suricata version 4.0.4 RELEASE
+10/3/2019 -- 02:21:42 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+10/3/2019 -- 02:31:24 - <Notice> - This is Suricata version 4.0.4 RELEASE
+10/3/2019 -- 02:31:39 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+10/3/2019 -- 23:10:16 - <Notice> - This is Suricata version 4.0.4 RELEASE
+10/3/2019 -- 23:10:26 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+11/3/2019 -- 17:05:11 - <Notice> - This is Suricata version 4.0.4 RELEASE
+11/3/2019 -- 17:05:22 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.
+11/3/2019 -- 17:09:11 - <Notice> - This is Suricata version 4.0.4 RELEASE
+11/3/2019 -- 17:09:37 - <Notice> - all 12 packet processing threads, 4 management threads initialized, engine started.

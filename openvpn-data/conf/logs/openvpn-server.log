@@ -1,0 +1,1913 @@
+Sat Mar  9 23:43:11 2019 us=684273 Current Parameter Settings:
+Sat Mar  9 23:43:11 2019 us=684369   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:43:11 2019 us=684387   mode = 1
+Sat Mar  9 23:43:11 2019 us=684399   persist_config = DISABLED
+Sat Mar  9 23:43:11 2019 us=684411   persist_mode = 1
+Sat Mar  9 23:43:11 2019 us=684423   show_ciphers = DISABLED
+Sat Mar  9 23:43:11 2019 us=684434   show_digests = DISABLED
+Sat Mar  9 23:43:11 2019 us=684444   show_engines = DISABLED
+Sat Mar  9 23:43:11 2019 us=684455   genkey = DISABLED
+Sat Mar  9 23:43:11 2019 us=684467   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:43:11 2019 us=684478 NOTE: --mute triggered...
+Sat Mar  9 23:43:11 2019 us=684497 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:43:11 2019 us=684511 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:43:11 2019 us=684527 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:43:11 2019 us=684710 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:43:11 2019 us=684975 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:43:11 2019 us=685638 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:43:11 2019 us=685665 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:43:11 2019 us=685687 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:43:11 2019 us=685848 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:43:11 2019 us=686135 TUN/TAP device tun0 opened
+Sat Mar  9 23:43:11 2019 us=686173 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:43:11 2019 us=686194 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:43:11 2019 us=686230 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:43:11 2019 us=687081 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:43:11 2019 us=688108 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:43:11 2019 us=688923 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:43:11 2019 us=689718 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:43:11 2019 us=689810 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:43:11 2019 us=689845 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:43:11 2019 us=689873 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:43:11 2019 us=689885 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:43:11 2019 us=689906 GID set to nogroup
+Sat Mar  9 23:43:11 2019 us=689954 UID set to nobody
+Sat Mar  9 23:43:11 2019 us=689975 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:43:11 2019 us=690022 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:43:11 2019 us=690041 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sat Mar  9 23:43:11 2019 us=690063 succeeded -> ifconfig_pool_set()
+Sat Mar  9 23:43:11 2019 us=690076 IFCONFIG POOL LIST
+Sat Mar  9 23:43:11 2019 us=690090 test2@acme.com,192.168.50.4
+Sat Mar  9 23:43:11 2019 us=690135 Initialization Sequence Completed
+Sat Mar  9 23:45:31 2019 us=343186 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:45:31 2019 us=343320 TCP/UDP: Closing socket
+Sat Mar  9 23:45:31 2019 us=343351 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:45:31 2019 us=343882 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:45:31 2019 us=343900 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:45:31 2019 us=344407 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:45:31 2019 us=344434 Closing TUN/TAP interface
+Sat Mar  9 23:45:31 2019 us=344447 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:45:31 2019 us=344870 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:45:31 2019 us=369330 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:51:25 2019 us=997472 Current Parameter Settings:
+Sat Mar  9 23:51:25 2019 us=997498   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:51:25 2019 us=997512   mode = 1
+Sat Mar  9 23:51:25 2019 us=997522   persist_config = DISABLED
+Sat Mar  9 23:51:25 2019 us=997531   persist_mode = 1
+Sat Mar  9 23:51:25 2019 us=997540   show_ciphers = DISABLED
+Sat Mar  9 23:51:25 2019 us=997550   show_digests = DISABLED
+Sat Mar  9 23:51:25 2019 us=997560   show_engines = DISABLED
+Sat Mar  9 23:51:25 2019 us=997570   genkey = DISABLED
+Sat Mar  9 23:51:25 2019 us=997580   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:51:25 2019 us=997590 NOTE: --mute triggered...
+Sat Mar  9 23:51:25 2019 us=997604 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:51:25 2019 us=997617 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:51:25 2019 us=997630 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:51:25 2019 us=997706 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:51:25 2019 us=997844 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:51:25 2019 us=998142 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:51:25 2019 us=998154 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:51:25 2019 us=998168 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:51:25 2019 us=998258 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:51:25 2019 us=998403 TUN/TAP device tun0 opened
+Sat Mar  9 23:51:25 2019 us=998423 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:51:25 2019 us=998437 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:51:25 2019 us=998460 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:51:25 2019 us=998893 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:51:25 2019 us=999279 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:51:25 2019 us=999679 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:51:26 2019 us=71 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:51:26 2019 us=119 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:51:26 2019 us=134 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:51:26 2019 us=150 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:51:26 2019 us=159 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:51:26 2019 us=171 GID set to nogroup
+Sat Mar  9 23:51:26 2019 us=199 UID set to nobody
+Sat Mar  9 23:51:26 2019 us=209 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:51:26 2019 us=235 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:51:26 2019 us=245 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sat Mar  9 23:51:26 2019 us=254 succeeded -> ifconfig_pool_set()
+Sat Mar  9 23:51:26 2019 us=262 IFCONFIG POOL LIST
+Sat Mar  9 23:51:26 2019 us=271 test2@acme.com,192.168.50.4
+Sat Mar  9 23:51:26 2019 us=298 Initialization Sequence Completed
+Sat Mar  9 23:52:20 2019 us=476356 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:52:20 2019 us=476662 TCP/UDP: Closing socket
+Sat Mar  9 23:52:20 2019 us=476778 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:52:20 2019 us=478268 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:52:20 2019 us=478366 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:52:20 2019 us=479703 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:52:20 2019 us=479761 Closing TUN/TAP interface
+Sat Mar  9 23:52:20 2019 us=479862 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:52:20 2019 us=481083 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:52:20 2019 us=518110 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:54:47 2019 us=226242 Current Parameter Settings:
+Sat Mar  9 23:54:47 2019 us=226277   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:54:47 2019 us=226287   mode = 1
+Sat Mar  9 23:54:47 2019 us=226295   persist_config = DISABLED
+Sat Mar  9 23:54:47 2019 us=226303   persist_mode = 1
+Sat Mar  9 23:54:47 2019 us=226310   show_ciphers = DISABLED
+Sat Mar  9 23:54:47 2019 us=226317   show_digests = DISABLED
+Sat Mar  9 23:54:47 2019 us=226324   show_engines = DISABLED
+Sat Mar  9 23:54:47 2019 us=226331   genkey = DISABLED
+Sat Mar  9 23:54:47 2019 us=226338   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:54:47 2019 us=226345 NOTE: --mute triggered...
+Sat Mar  9 23:54:47 2019 us=226357 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:54:47 2019 us=226365 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:54:47 2019 us=226375 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:54:47 2019 us=226465 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:54:47 2019 us=226658 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:54:47 2019 us=227039 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:54:47 2019 us=227056 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:54:47 2019 us=227069 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:54:47 2019 us=227171 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:54:47 2019 us=227352 TUN/TAP device tun0 opened
+Sat Mar  9 23:54:47 2019 us=227376 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:54:47 2019 us=227389 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:54:47 2019 us=227411 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:54:47 2019 us=227918 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:54:47 2019 us=228391 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:54:47 2019 us=228874 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:54:47 2019 us=229353 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:54:47 2019 us=229444 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:54:47 2019 us=229471 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:54:47 2019 us=229493 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:54:47 2019 us=229501 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:54:47 2019 us=229517 GID set to nogroup
+Sat Mar  9 23:54:47 2019 us=229569 UID set to nobody
+Sat Mar  9 23:54:47 2019 us=229590 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:54:47 2019 us=229647 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:54:47 2019 us=229668 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sat Mar  9 23:54:47 2019 us=229685 succeeded -> ifconfig_pool_set()
+Sat Mar  9 23:54:47 2019 us=229700 IFCONFIG POOL LIST
+Sat Mar  9 23:54:47 2019 us=229715 test2@acme.com,192.168.50.4
+Sat Mar  9 23:54:47 2019 us=229764 Initialization Sequence Completed
+Sat Mar  9 23:55:39 2019 us=897149 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:55:39 2019 us=897255 TCP/UDP: Closing socket
+Sat Mar  9 23:55:39 2019 us=897287 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:55:39 2019 us=897686 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:55:39 2019 us=897707 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:55:39 2019 us=898123 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:55:39 2019 us=898141 Closing TUN/TAP interface
+Sat Mar  9 23:55:39 2019 us=898156 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:55:39 2019 us=898848 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:55:39 2019 us=931365 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:56:55 2019 us=70492 Current Parameter Settings:
+Sat Mar  9 23:56:55 2019 us=70522   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:56:55 2019 us=70530   mode = 1
+Sat Mar  9 23:56:55 2019 us=70538   persist_config = DISABLED
+Sat Mar  9 23:56:55 2019 us=70544   persist_mode = 1
+Sat Mar  9 23:56:55 2019 us=70549   show_ciphers = DISABLED
+Sat Mar  9 23:56:55 2019 us=70557   show_digests = DISABLED
+Sat Mar  9 23:56:55 2019 us=70563   show_engines = DISABLED
+Sat Mar  9 23:56:55 2019 us=70568   genkey = DISABLED
+Sat Mar  9 23:56:55 2019 us=70573   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:56:55 2019 us=70579 NOTE: --mute triggered...
+Sat Mar  9 23:56:55 2019 us=70591 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:56:55 2019 us=70597 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:56:55 2019 us=70604 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:56:55 2019 us=70695 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:56:55 2019 us=70844 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:56:55 2019 us=71191 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:56:55 2019 us=71205 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:56:55 2019 us=71219 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:56:55 2019 us=71319 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:56:55 2019 us=71474 TUN/TAP device tun0 opened
+Sat Mar  9 23:56:55 2019 us=71495 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:56:55 2019 us=71508 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:56:55 2019 us=71527 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:56:55 2019 us=71937 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:56:55 2019 us=73965 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:56:55 2019 us=74374 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:56:55 2019 us=74751 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:56:55 2019 us=74794 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:56:55 2019 us=74807 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:56:55 2019 us=74818 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:56:55 2019 us=74824 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:56:55 2019 us=74833 GID set to nogroup
+Sat Mar  9 23:56:55 2019 us=74857 UID set to nobody
+Sat Mar  9 23:56:55 2019 us=74867 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:56:55 2019 us=74891 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:56:55 2019 us=74901 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sat Mar  9 23:56:55 2019 us=74907 succeeded -> ifconfig_pool_set()
+Sat Mar  9 23:56:55 2019 us=74913 IFCONFIG POOL LIST
+Sat Mar  9 23:56:55 2019 us=74919 test2@acme.com,192.168.50.4
+Sat Mar  9 23:56:55 2019 us=74940 Initialization Sequence Completed
+Sat Mar  9 23:57:06 2019 us=710765 MULTI: multi_create_instance called
+Sat Mar  9 23:57:06 2019 us=710813 192.168.5.1:55439 Re-using SSL/TLS context
+Sat Mar  9 23:57:06 2019 us=710892 192.168.5.1:55439 Control Channel MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:57:06 2019 us=710902 192.168.5.1:55439 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:57:06 2019 us=710941 192.168.5.1:55439 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA1,keysize 128,tls-auth,key-method 2,tls-server'
+Sat Mar  9 23:57:06 2019 us=710947 192.168.5.1:55439 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,tls-auth,key-method 2,tls-client'
+Sat Mar  9 23:57:06 2019 us=710966 192.168.5.1:55439 TLS: Initial packet from [AF_INET]192.168.5.1:55439, sid=d9fb0b07 ba2b9074
+Sat Mar  9 23:57:06 2019 us=714393 192.168.5.1:55439 VERIFY OK: depth=1, CN=myca
+Sat Mar  9 23:57:06 2019 us=714563 192.168.5.1:55439 VERIFY OK: depth=0, CN=test1
+Sat Mar  9 23:57:06 2019 us=714684 192.168.5.1:55439 peer info: IV_VER=2.4.7
+Sat Mar  9 23:57:06 2019 us=714696 192.168.5.1:55439 peer info: IV_PLAT=linux
+Sat Mar  9 23:57:06 2019 us=714703 192.168.5.1:55439 peer info: IV_PROTO=2
+Sat Mar  9 23:57:06 2019 us=714708 192.168.5.1:55439 peer info: IV_NCP=2
+Sat Mar  9 23:57:06 2019 us=714713 192.168.5.1:55439 peer info: IV_LZ4=1
+Sat Mar  9 23:57:06 2019 us=714718 192.168.5.1:55439 peer info: IV_LZ4v2=1
+Sat Mar  9 23:57:06 2019 us=714723 192.168.5.1:55439 peer info: IV_LZO=1
+Sat Mar  9 23:57:06 2019 us=714730 192.168.5.1:55439 peer info: IV_COMP_STUB=1
+Sat Mar  9 23:57:06 2019 us=714739 192.168.5.1:55439 peer info: IV_COMP_STUBv2=1
+Sat Mar  9 23:57:06 2019 us=714747 192.168.5.1:55439 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sat Mar  9 23:57:06 2019 us=759414 192.168.5.1:55439 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sat Mar  9 23:57:06 2019 us=759449 192.168.5.1:55439 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1542', remote='link-mtu 1541'
+Sat Mar  9 23:57:06 2019 us=759472 192.168.5.1:55439 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sat Mar  9 23:57:06 2019 us=760012 192.168.5.1:55439 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, 2048 bit RSA
+Sat Mar  9 23:57:06 2019 us=760042 192.168.5.1:55439 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.5.1:55439
+Sat Mar  9 23:57:06 2019 us=760076 test2@acme.com/192.168.5.1:55439 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sat Mar  9 23:57:06 2019 us=760116 test2@acme.com/192.168.5.1:55439 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.5.1:55439
+Sat Mar  9 23:57:06 2019 us=760127 test2@acme.com/192.168.5.1:55439 MULTI: primary virtual IP for test2@acme.com/192.168.5.1:55439: 192.168.50.6
+Sat Mar  9 23:57:08 2019 us=11761 test2@acme.com/192.168.5.1:55439 PUSH: Received control message: 'PUSH_REQUEST'
+Sat Mar  9 23:57:08 2019 us=11918 test2@acme.com/192.168.5.1:55439 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sat Mar  9 23:57:08 2019 us=11955 test2@acme.com/192.168.5.1:55439 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sat Mar  9 23:57:08 2019 us=12016 test2@acme.com/192.168.5.1:55439 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:57:08 2019 us=12261 test2@acme.com/192.168.5.1:55439 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sat Mar  9 23:57:08 2019 us=12299 test2@acme.com/192.168.5.1:55439 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sat Mar  9 23:57:08 2019 us=40114 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=40722 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=268878 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=346365 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=358241 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=424182 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=518327 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=545151 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=784772 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:08 2019 us=947864 test2@acme.com/192.168.5.1:55439 MULTI: bad source address from client [192.168.1.23], packet dropped
+Sat Mar  9 23:57:09 2019 us=38579 test2@acme.com/192.168.5.1:55439 NOTE: --mute triggered...
+Sat Mar  9 23:57:18 2019 us=686756 28 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:57:18 2019 us=686792 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:57:18 2019 us=686982 TCP/UDP: Closing socket
+Sat Mar  9 23:57:18 2019 us=687038 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:57:18 2019 us=687583 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:57:18 2019 us=687607 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:57:18 2019 us=687968 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:57:18 2019 us=687986 Closing TUN/TAP interface
+Sat Mar  9 23:57:18 2019 us=688003 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:57:18 2019 us=688405 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:57:18 2019 us=731294 SIGTERM[hard,] received, process exiting
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:37 2019 us=136336 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:37 2019 us=136376 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:37 2019 us=977587 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:37 2019 us=977611 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:38 2019 us=803371 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:38 2019 us=803395 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:39 2019 us=795468 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:39 2019 us=795500 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:41 2019 us=73338 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:41 2019 us=73363 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:43 2019 us=245819 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:43 2019 us=245856 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:47 2019 us=50541 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:47 2019 us=50566 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Options error: --cert fails with '/etc/openvpn/pki/issued/myvpn.com.crt': No such file or directory (errno=2)
+Sat Mar  9 23:59:54 2019 us=57944 WARNING: cannot stat file '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Options error: --key fails with '/etc/openvpn/pki/private/myvpn.com.key': No such file or directory (errno=2)
+Sat Mar  9 23:59:54 2019 us=57979 WARNING: cannot stat file '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: --tls-auth fails with '/etc/openvpn/pki/ta.key': No such file or directory (errno=2)
+Options error: Please correct these errors.
+Use --help for more information.
+Sun Mar 10 00:03:02 2019 us=58229 Current Parameter Settings:
+Sun Mar 10 00:03:02 2019 us=58264   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:03:02 2019 us=58274   mode = 1
+Sun Mar 10 00:03:02 2019 us=58284   persist_config = DISABLED
+Sun Mar 10 00:03:02 2019 us=58292   persist_mode = 1
+Sun Mar 10 00:03:02 2019 us=58300   show_ciphers = DISABLED
+Sun Mar 10 00:03:02 2019 us=58309   show_digests = DISABLED
+Sun Mar 10 00:03:02 2019 us=58317   show_engines = DISABLED
+Sun Mar 10 00:03:02 2019 us=58325   genkey = DISABLED
+Sun Mar 10 00:03:02 2019 us=58333   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:03:02 2019 us=58342 NOTE: --mute triggered...
+Sun Mar 10 00:03:02 2019 us=58358 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:03:02 2019 us=58398 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:03:02 2019 us=58412 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:03:02 2019 us=58563 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:03:02 2019 us=58777 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:03:02 2019 us=59367 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:03:02 2019 us=59383 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:03:02 2019 us=59397 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:03:02 2019 us=59507 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:03:02 2019 us=59699 TUN/TAP device tun0 opened
+Sun Mar 10 00:03:02 2019 us=59723 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:03:02 2019 us=59737 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:03:02 2019 us=59756 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:03:02 2019 us=60316 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:03:02 2019 us=60729 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:03:02 2019 us=61062 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:03:02 2019 us=61535 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:03:02 2019 us=61577 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:03:02 2019 us=61591 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:03:02 2019 us=61619 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:03:02 2019 us=61625 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:03:02 2019 us=61655 GID set to nogroup
+Sun Mar 10 00:03:02 2019 us=61666 UID set to nobody
+Sun Mar 10 00:03:02 2019 us=61675 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:03:02 2019 us=61697 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:03:02 2019 us=61706 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:03:02 2019 us=61712 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:03:02 2019 us=61719 IFCONFIG POOL LIST
+Sun Mar 10 00:03:02 2019 us=61725 test2@acme.com,192.168.50.4
+Sun Mar 10 00:03:02 2019 us=61746 Initialization Sequence Completed
+Sun Mar 10 00:03:27 2019 us=450431 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:43968
+Sun Mar 10 00:03:29 2019 us=766500 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:43968
+Sun Mar 10 00:03:43 2019 us=302309 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:35290
+Sun Mar 10 00:03:45 2019 us=591163 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:35290
+Sun Mar 10 00:03:49 2019 us=23122 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:35290
+Sun Mar 10 00:10:57 2019 us=552432 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:10:57 2019 us=552464 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:39650
+Sun Mar 10 00:10:59 2019 us=590978 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:10:59 2019 us=591148 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:39650
+Sun Mar 10 00:11:03 2019 us=666985 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:11:03 2019 us=667017 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:39650
+Sun Mar 10 00:11:11 2019 us=267941 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:11:11 2019 us=267993 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:39650
+Sun Mar 10 00:14:23 2019 us=932113 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:14:23 2019 us=932256 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:43834
+Sun Mar 10 00:14:25 2019 us=91769 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:14:25 2019 us=91852 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:43834
+Sun Mar 10 00:14:29 2019 us=731362 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:14:29 2019 us=731460 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:43834
+Sun Mar 10 00:14:37 2019 us=318091 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:14:37 2019 us=318178 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:43834
+Sun Mar 10 00:15:25 2019 us=526603 event_wait : Interrupted system call (code=4)
+Sun Mar 10 00:15:25 2019 us=526931 TCP/UDP: Closing socket
+Sun Mar 10 00:15:25 2019 us=527052 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:15:25 2019 us=528595 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:15:25 2019 us=528698 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:15:25 2019 us=531957 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:15:25 2019 us=532015 Closing TUN/TAP interface
+Sun Mar 10 00:15:25 2019 us=532070 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:15:25 2019 us=533453 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 00:15:25 2019 us=572132 SIGTERM[hard,] received, process exiting
+Sun Mar 10 00:15:27 2019 us=407021 Current Parameter Settings:
+Sun Mar 10 00:15:27 2019 us=407209   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:15:27 2019 us=407217   mode = 1
+Sun Mar 10 00:15:27 2019 us=407223   persist_config = DISABLED
+Sun Mar 10 00:15:27 2019 us=407228   persist_mode = 1
+Sun Mar 10 00:15:27 2019 us=407233   show_ciphers = DISABLED
+Sun Mar 10 00:15:27 2019 us=407239   show_digests = DISABLED
+Sun Mar 10 00:15:27 2019 us=407244   show_engines = DISABLED
+Sun Mar 10 00:15:27 2019 us=407249   genkey = DISABLED
+Sun Mar 10 00:15:27 2019 us=407255   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:15:27 2019 us=407260 NOTE: --mute triggered...
+Sun Mar 10 00:15:27 2019 us=407269 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:15:27 2019 us=407274 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:15:27 2019 us=407282 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:15:27 2019 us=407355 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:15:27 2019 us=407695 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:15:27 2019 us=408470 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Mar 10 00:15:27 2019 us=408484 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Mar 10 00:15:27 2019 us=408493 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:15:27 2019 us=408572 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:15:27 2019 us=408712 TUN/TAP device tun0 opened
+Sun Mar 10 00:15:27 2019 us=408730 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:15:27 2019 us=408740 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:15:27 2019 us=408757 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:15:27 2019 us=409170 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:15:27 2019 us=409568 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:15:27 2019 us=409877 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:15:27 2019 us=410250 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:15:27 2019 us=410300 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:15:27 2019 us=410316 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:15:27 2019 us=410327 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:15:27 2019 us=410333 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:15:27 2019 us=410342 GID set to nogroup
+Sun Mar 10 00:15:27 2019 us=410364 UID set to nobody
+Sun Mar 10 00:15:27 2019 us=410373 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:15:27 2019 us=410392 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:15:27 2019 us=410400 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:15:27 2019 us=410406 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:15:27 2019 us=410412 IFCONFIG POOL LIST
+Sun Mar 10 00:15:27 2019 us=410418 test2@acme.com,192.168.50.4
+Sun Mar 10 00:15:27 2019 us=410440 Initialization Sequence Completed
+Sun Mar 10 00:15:45 2019 us=660714 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:15:45 2019 us=660822 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:40125
+Sun Mar 10 00:15:47 2019 us=913472 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:15:47 2019 us=913497 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:40125
+Sun Mar 10 00:15:51 2019 us=291193 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:15:51 2019 us=291220 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:40125
+Sun Mar 10 00:17:00 2019 us=377273 event_wait : Interrupted system call (code=4)
+Sun Mar 10 00:17:00 2019 us=378451 TCP/UDP: Closing socket
+Sun Mar 10 00:17:00 2019 us=378549 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:17:00 2019 us=379603 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:17:00 2019 us=379645 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:17:00 2019 us=380456 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:17:00 2019 us=380499 Closing TUN/TAP interface
+Sun Mar 10 00:17:00 2019 us=380535 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:17:00 2019 us=381366 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 00:17:00 2019 us=411141 SIGTERM[hard,] received, process exiting
+Sun Mar 10 00:17:02 2019 us=67373 Current Parameter Settings:
+Sun Mar 10 00:17:02 2019 us=67400   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:17:02 2019 us=67412   mode = 1
+Sun Mar 10 00:17:02 2019 us=67422   persist_config = DISABLED
+Sun Mar 10 00:17:02 2019 us=67432   persist_mode = 1
+Sun Mar 10 00:17:02 2019 us=67441   show_ciphers = DISABLED
+Sun Mar 10 00:17:02 2019 us=67451   show_digests = DISABLED
+Sun Mar 10 00:17:02 2019 us=67460   show_engines = DISABLED
+Sun Mar 10 00:17:02 2019 us=67470   genkey = DISABLED
+Sun Mar 10 00:17:02 2019 us=67480   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:17:02 2019 us=67490 NOTE: --mute triggered...
+Sun Mar 10 00:17:02 2019 us=67504 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:17:02 2019 us=67516 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:17:02 2019 us=67528 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:17:02 2019 us=67604 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:17:02 2019 us=67826 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:17:02 2019 us=68147 TLS-Auth MTU parms [ L:1622 D:1212 EF:38 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:17:02 2019 us=68238 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:17:02 2019 us=68400 TUN/TAP device tun0 opened
+Sun Mar 10 00:17:02 2019 us=68420 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:17:02 2019 us=68434 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:17:02 2019 us=68451 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:17:02 2019 us=68856 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:17:02 2019 us=69291 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:17:02 2019 us=69617 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:17:02 2019 us=69979 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:17:02 2019 us=70018 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:17:02 2019 us=70030 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:17:02 2019 us=70040 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:17:02 2019 us=70046 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:17:02 2019 us=70055 GID set to nogroup
+Sun Mar 10 00:17:02 2019 us=70077 UID set to nobody
+Sun Mar 10 00:17:02 2019 us=70086 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:17:02 2019 us=70107 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:17:02 2019 us=70116 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:17:02 2019 us=70122 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:17:02 2019 us=70127 IFCONFIG POOL LIST
+Sun Mar 10 00:17:02 2019 us=70133 test2@acme.com,192.168.50.4
+Sun Mar 10 00:17:02 2019 us=70153 Initialization Sequence Completed
+Sun Mar 10 00:17:09 2019 us=625566 MULTI: multi_create_instance called
+Sun Mar 10 00:17:09 2019 us=625697 192.168.5.1:58122 Re-using SSL/TLS context
+Sun Mar 10 00:17:09 2019 us=626007 192.168.5.1:58122 Control Channel MTU parms [ L:1622 D:1212 EF:38 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:17:09 2019 us=626052 192.168.5.1:58122 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:17:09 2019 us=626166 192.168.5.1:58122 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA1,keysize 128,key-method 2,tls-server'
+Sun Mar 10 00:17:09 2019 us=626195 192.168.5.1:58122 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,key-method 2,tls-client'
+Sun Mar 10 00:17:09 2019 us=626264 192.168.5.1:58122 TLS: Initial packet from [AF_INET]192.168.5.1:58122, sid=3b406653 1f9b0537
+Sun Mar 10 00:17:09 2019 us=626291 192.168.5.1:58122 TLS Error: reading acknowledgement record from packet
+Sun Mar 10 00:17:11 2019 us=816578 192.168.5.1:58122 TLS Error: reading acknowledgement record from packet
+Sun Mar 10 00:18:09 2019 us=26493 192.168.5.1:58122 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
+Sun Mar 10 00:18:09 2019 us=26535 192.168.5.1:58122 TLS Error: TLS handshake failed
+Sun Mar 10 00:18:09 2019 us=26685 192.168.5.1:58122 SIGUSR1[soft,tls-error] received, client-instance restarting
+Sun Mar 10 00:21:25 2019 us=274810 MULTI: multi_create_instance called
+Sun Mar 10 00:21:25 2019 us=274952 192.168.5.1:36529 Re-using SSL/TLS context
+Sun Mar 10 00:21:25 2019 us=275082 192.168.5.1:36529 Control Channel MTU parms [ L:1622 D:1212 EF:38 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:21:25 2019 us=275125 192.168.5.1:36529 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:21:25 2019 us=275248 192.168.5.1:36529 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA1,keysize 128,key-method 2,tls-server'
+Sun Mar 10 00:21:25 2019 us=275282 192.168.5.1:36529 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1542,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,key-method 2,tls-client'
+Sun Mar 10 00:21:25 2019 us=275357 192.168.5.1:36529 TLS: Initial packet from [AF_INET]192.168.5.1:36529, sid=e51c1104 3696a315
+Sun Mar 10 00:21:25 2019 us=275389 192.168.5.1:36529 TLS Error: reading acknowledgement record from packet
+Sun Mar 10 00:21:27 2019 us=585613 192.168.5.1:36529 TLS Error: reading acknowledgement record from packet
+Sun Mar 10 00:21:33 2019 us=970270 event_wait : Interrupted system call (code=4)
+Sun Mar 10 00:21:33 2019 us=970420 TCP/UDP: Closing socket
+Sun Mar 10 00:21:33 2019 us=970495 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:21:33 2019 us=971241 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:21:33 2019 us=971316 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:21:33 2019 us=972314 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:21:33 2019 us=972331 Closing TUN/TAP interface
+Sun Mar 10 00:21:33 2019 us=972345 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:21:33 2019 us=972702 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 00:21:34 2019 us=14996 SIGTERM[hard,] received, process exiting
+Sun Mar 10 00:21:36 2019 us=273799 Current Parameter Settings:
+Sun Mar 10 00:21:36 2019 us=273836   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:21:36 2019 us=273846   mode = 1
+Sun Mar 10 00:21:36 2019 us=273854   persist_config = DISABLED
+Sun Mar 10 00:21:36 2019 us=273862   persist_mode = 1
+Sun Mar 10 00:21:36 2019 us=273869   show_ciphers = DISABLED
+Sun Mar 10 00:21:36 2019 us=273877   show_digests = DISABLED
+Sun Mar 10 00:21:36 2019 us=273884   show_engines = DISABLED
+Sun Mar 10 00:21:36 2019 us=273891   genkey = DISABLED
+Sun Mar 10 00:21:36 2019 us=273899   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:21:36 2019 us=273906 NOTE: --mute triggered...
+Sun Mar 10 00:21:36 2019 us=273920 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:21:36 2019 us=273928 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:21:36 2019 us=273938 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:21:36 2019 us=274045 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:21:36 2019 us=274247 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:21:36 2019 us=274808 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Mar 10 00:21:36 2019 us=274828 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sun Mar 10 00:21:36 2019 us=274843 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:21:36 2019 us=274973 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:21:36 2019 us=275190 TUN/TAP device tun0 opened
+Sun Mar 10 00:21:36 2019 us=275219 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:21:36 2019 us=275234 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:21:36 2019 us=275260 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:21:36 2019 us=275924 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:21:36 2019 us=276465 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:21:36 2019 us=277038 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:21:36 2019 us=277556 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:21:36 2019 us=277618 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:21:36 2019 us=277645 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:21:36 2019 us=277665 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:21:36 2019 us=277750 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:21:36 2019 us=277765 GID set to nogroup
+Sun Mar 10 00:21:36 2019 us=277781 UID set to nobody
+Sun Mar 10 00:21:36 2019 us=277802 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:21:36 2019 us=277832 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:21:36 2019 us=277855 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:21:36 2019 us=277866 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:21:36 2019 us=277874 IFCONFIG POOL LIST
+Sun Mar 10 00:21:36 2019 us=277883 test2@acme.com,192.168.50.4
+Sun Mar 10 00:21:36 2019 us=277919 Initialization Sequence Completed
+Sun Mar 10 00:22:12 2019 us=680657 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:22:12 2019 us=680791 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:57419
+Sun Mar 10 00:22:14 2019 us=899295 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:22:14 2019 us=899321 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:57419
+Sun Mar 10 00:22:18 2019 us=226456 Authenticate/Decrypt packet error: packet HMAC authentication failed
+Sun Mar 10 00:22:18 2019 us=226558 TLS Error: incoming packet authentication failed from [AF_INET]192.168.5.1:57419
+Sun Mar 10 00:23:48 2019 us=220593 event_wait : Interrupted system call (code=4)
+Sun Mar 10 00:23:48 2019 us=220723 TCP/UDP: Closing socket
+Sun Mar 10 00:23:48 2019 us=220761 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:23:48 2019 us=221292 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:23:48 2019 us=221315 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:23:48 2019 us=221728 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:23:48 2019 us=221746 Closing TUN/TAP interface
+Sun Mar 10 00:23:48 2019 us=221763 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:23:48 2019 us=222188 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 00:23:48 2019 us=260939 SIGTERM[hard,] received, process exiting
+Sun Mar 10 00:23:50 2019 us=626565 Current Parameter Settings:
+Sun Mar 10 00:23:50 2019 us=626597   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:23:50 2019 us=626606   mode = 1
+Sun Mar 10 00:23:50 2019 us=626614   persist_config = DISABLED
+Sun Mar 10 00:23:50 2019 us=626621   persist_mode = 1
+Sun Mar 10 00:23:50 2019 us=626628   show_ciphers = DISABLED
+Sun Mar 10 00:23:50 2019 us=626635   show_digests = DISABLED
+Sun Mar 10 00:23:50 2019 us=626642   show_engines = DISABLED
+Sun Mar 10 00:23:50 2019 us=626648   genkey = DISABLED
+Sun Mar 10 00:23:50 2019 us=626655   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:23:50 2019 us=626662 NOTE: --mute triggered...
+Sun Mar 10 00:23:50 2019 us=626674 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:23:50 2019 us=626682 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:23:50 2019 us=626691 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:23:50 2019 us=626786 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:23:50 2019 us=626959 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:23:50 2019 us=627434 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:23:50 2019 us=627450 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:23:50 2019 us=627464 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:23:50 2019 us=627569 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:23:50 2019 us=627781 TUN/TAP device tun0 opened
+Sun Mar 10 00:23:50 2019 us=627815 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:23:50 2019 us=627833 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:23:50 2019 us=627855 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:23:50 2019 us=628480 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:23:50 2019 us=628977 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:23:50 2019 us=629403 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:23:50 2019 us=629799 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:23:50 2019 us=629852 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:23:50 2019 us=629870 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:23:50 2019 us=629884 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:23:50 2019 us=629893 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:23:50 2019 us=629917 GID set to nogroup
+Sun Mar 10 00:23:50 2019 us=629949 UID set to nobody
+Sun Mar 10 00:23:50 2019 us=629963 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:23:50 2019 us=629992 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:23:50 2019 us=630004 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:23:50 2019 us=630016 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:23:50 2019 us=630024 IFCONFIG POOL LIST
+Sun Mar 10 00:23:50 2019 us=630032 test2@acme.com,192.168.50.4
+Sun Mar 10 00:23:50 2019 us=630062 Initialization Sequence Completed
+Sun Mar 10 00:24:13 2019 us=898733 MULTI: multi_create_instance called
+Sun Mar 10 00:24:13 2019 us=898952 192.168.5.1:34957 Re-using SSL/TLS context
+Sun Mar 10 00:24:13 2019 us=899286 192.168.5.1:34957 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:24:13 2019 us=899335 192.168.5.1:34957 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:24:13 2019 us=899468 192.168.5.1:34957 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 00:24:13 2019 us=899501 192.168.5.1:34957 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 00:24:13 2019 us=899573 192.168.5.1:34957 TLS: Initial packet from [AF_INET]192.168.5.1:34957, sid=f3c6bc51 7d226486
+Sun Mar 10 00:24:13 2019 us=911234 192.168.5.1:34957 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 00:24:13 2019 us=911255 192.168.5.1:34957 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 00:24:13 2019 us=911327 192.168.5.1:34957 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 00:24:13 2019 us=912088 192.168.5.1:34957 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 00:24:13 2019 us=912291 192.168.5.1:34957 peer info: IV_VER=2.4.7
+Sun Mar 10 00:24:13 2019 us=912302 192.168.5.1:34957 peer info: IV_PLAT=linux
+Sun Mar 10 00:24:13 2019 us=912307 192.168.5.1:34957 peer info: IV_PROTO=2
+Sun Mar 10 00:24:13 2019 us=912313 192.168.5.1:34957 peer info: IV_NCP=2
+Sun Mar 10 00:24:13 2019 us=912317 192.168.5.1:34957 peer info: IV_LZ4=1
+Sun Mar 10 00:24:13 2019 us=912322 192.168.5.1:34957 peer info: IV_LZ4v2=1
+Sun Mar 10 00:24:13 2019 us=912327 192.168.5.1:34957 peer info: IV_LZO=1
+Sun Mar 10 00:24:13 2019 us=912332 192.168.5.1:34957 peer info: IV_COMP_STUB=1
+Sun Mar 10 00:24:13 2019 us=912337 192.168.5.1:34957 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 00:24:13 2019 us=912342 192.168.5.1:34957 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 00:24:13 2019 us=955928 192.168.5.1:34957 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 00:24:13 2019 us=955955 192.168.5.1:34957 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 00:24:13 2019 us=955976 192.168.5.1:34957 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 00:24:13 2019 us=955992 192.168.5.1:34957 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 00:24:13 2019 us=956018 192.168.5.1:34957 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 00:24:13 2019 us=956409 192.168.5.1:34957 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, 4096 bit RSA
+Sun Mar 10 00:24:13 2019 us=956435 192.168.5.1:34957 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.5.1:34957
+Sun Mar 10 00:24:13 2019 us=956469 test2@acme.com/192.168.5.1:34957 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 00:24:13 2019 us=956506 test2@acme.com/192.168.5.1:34957 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.5.1:34957
+Sun Mar 10 00:24:13 2019 us=956515 test2@acme.com/192.168.5.1:34957 MULTI: primary virtual IP for test2@acme.com/192.168.5.1:34957: 192.168.50.6
+Sun Mar 10 00:24:15 2019 us=126791 test2@acme.com/192.168.5.1:34957 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 00:24:15 2019 us=126864 test2@acme.com/192.168.5.1:34957 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 00:24:15 2019 us=126872 test2@acme.com/192.168.5.1:34957 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 00:24:15 2019 us=126886 test2@acme.com/192.168.5.1:34957 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:24:15 2019 us=126938 test2@acme.com/192.168.5.1:34957 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 00:24:15 2019 us=126952 test2@acme.com/192.168.5.1:34957 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 00:25:40 2019 us=984122 event_wait : Interrupted system call (code=4)
+Sun Mar 10 00:25:40 2019 us=984362 TCP/UDP: Closing socket
+Sun Mar 10 00:25:40 2019 us=984405 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:25:40 2019 us=984913 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:25:40 2019 us=984947 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:25:40 2019 us=985393 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 00:25:40 2019 us=985416 Closing TUN/TAP interface
+Sun Mar 10 00:25:40 2019 us=985442 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 00:25:40 2019 us=985906 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 00:25:41 2019 us=24643 SIGTERM[hard,] received, process exiting
+Sun Mar 10 00:58:27 2019 us=531541 Current Parameter Settings:
+Sun Mar 10 00:58:27 2019 us=531611   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 00:58:27 2019 us=531623   mode = 1
+Sun Mar 10 00:58:27 2019 us=531632   persist_config = DISABLED
+Sun Mar 10 00:58:27 2019 us=531641   persist_mode = 1
+Sun Mar 10 00:58:27 2019 us=531650   show_ciphers = DISABLED
+Sun Mar 10 00:58:27 2019 us=531659   show_digests = DISABLED
+Sun Mar 10 00:58:27 2019 us=531668   show_engines = DISABLED
+Sun Mar 10 00:58:27 2019 us=531676   genkey = DISABLED
+Sun Mar 10 00:58:27 2019 us=531685   key_pass_file = '[UNDEF]'
+Sun Mar 10 00:58:27 2019 us=531693 NOTE: --mute triggered...
+Sun Mar 10 00:58:27 2019 us=531708 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 00:58:27 2019 us=531720 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 00:58:27 2019 us=531747 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 00:58:27 2019 us=531873 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 00:58:27 2019 us=532084 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 00:58:27 2019 us=532657 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:58:27 2019 us=532676 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 00:58:27 2019 us=532691 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 00:58:27 2019 us=532811 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 00:58:27 2019 us=533022 TUN/TAP device tun0 opened
+Sun Mar 10 00:58:27 2019 us=533050 TUN/TAP TX queue length set to 100
+Sun Mar 10 00:58:27 2019 us=533064 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 00:58:27 2019 us=533082 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 00:58:27 2019 us=533748 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 00:58:27 2019 us=534391 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 00:58:27 2019 us=534942 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 00:58:27 2019 us=535436 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 00:58:27 2019 us=535519 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 00:58:27 2019 us=535553 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 00:58:27 2019 us=535578 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 00:58:27 2019 us=535593 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 00:58:27 2019 us=535613 GID set to nogroup
+Sun Mar 10 00:58:27 2019 us=535660 UID set to nobody
+Sun Mar 10 00:58:27 2019 us=535681 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 00:58:27 2019 us=535728 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 00:58:27 2019 us=535749 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 00:58:27 2019 us=535765 succeeded -> ifconfig_pool_set()
+Sun Mar 10 00:58:27 2019 us=535780 IFCONFIG POOL LIST
+Sun Mar 10 00:58:27 2019 us=535796 test2@acme.com,192.168.50.4
+Sun Mar 10 00:58:27 2019 us=535848 Initialization Sequence Completed
+Sun Mar 10 01:13:51 2019 us=891453 MULTI: multi_create_instance called
+Sun Mar 10 01:13:51 2019 us=891633 192.168.5.1:34543 Re-using SSL/TLS context
+Sun Mar 10 01:13:51 2019 us=894867 192.168.5.1:34543 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:13:51 2019 us=894964 192.168.5.1:34543 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:13:51 2019 us=895910 192.168.5.1:34543 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 01:13:51 2019 us=895966 192.168.5.1:34543 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 01:13:51 2019 us=896068 192.168.5.1:34543 TLS: Initial packet from [AF_INET]192.168.5.1:34543, sid=9ee738e8 21eb9c84
+Sun Mar 10 01:13:51 2019 us=945401 192.168.5.1:34543 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 01:13:51 2019 us=945513 192.168.5.1:34543 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:13:51 2019 us=945874 192.168.5.1:34543 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:13:51 2019 us=949888 192.168.5.1:34543 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 01:13:51 2019 us=950781 192.168.5.1:34543 peer info: IV_VER=2.4.7
+Sun Mar 10 01:13:51 2019 us=950840 192.168.5.1:34543 peer info: IV_PLAT=linux
+Sun Mar 10 01:13:51 2019 us=950870 192.168.5.1:34543 peer info: IV_PROTO=2
+Sun Mar 10 01:13:51 2019 us=950897 192.168.5.1:34543 peer info: IV_NCP=2
+Sun Mar 10 01:13:51 2019 us=950923 192.168.5.1:34543 peer info: IV_LZ4=1
+Sun Mar 10 01:13:51 2019 us=950949 192.168.5.1:34543 peer info: IV_LZ4v2=1
+Sun Mar 10 01:13:51 2019 us=950975 192.168.5.1:34543 peer info: IV_LZO=1
+Sun Mar 10 01:13:51 2019 us=951002 192.168.5.1:34543 peer info: IV_COMP_STUB=1
+Sun Mar 10 01:13:51 2019 us=951066 192.168.5.1:34543 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 01:13:51 2019 us=951093 192.168.5.1:34543 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 01:13:52 2019 us=112326 192.168.5.1:34543 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 01:13:52 2019 us=112358 192.168.5.1:34543 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 01:13:52 2019 us=112383 192.168.5.1:34543 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 01:13:52 2019 us=112404 192.168.5.1:34543 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 01:13:52 2019 us=112427 192.168.5.1:34543 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 01:13:52 2019 us=112892 192.168.5.1:34543 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, 4096 bit RSA
+Sun Mar 10 01:13:52 2019 us=112924 192.168.5.1:34543 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.5.1:34543
+Sun Mar 10 01:13:52 2019 us=112959 test2@acme.com/192.168.5.1:34543 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 01:13:52 2019 us=113005 test2@acme.com/192.168.5.1:34543 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.5.1:34543
+Sun Mar 10 01:13:52 2019 us=113017 test2@acme.com/192.168.5.1:34543 MULTI: primary virtual IP for test2@acme.com/192.168.5.1:34543: 192.168.50.6
+Sun Mar 10 01:13:53 2019 us=151320 test2@acme.com/192.168.5.1:34543 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 01:13:53 2019 us=151490 test2@acme.com/192.168.5.1:34543 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 01:13:53 2019 us=151524 test2@acme.com/192.168.5.1:34543 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 01:13:53 2019 us=151578 test2@acme.com/192.168.5.1:34543 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:13:53 2019 us=151784 test2@acme.com/192.168.5.1:34543 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:13:53 2019 us=151820 test2@acme.com/192.168.5.1:34543 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:15:55 2019 us=773514 test2@acme.com/192.168.5.1:34543 [test2@acme.com] Inactivity timeout (--ping-restart), restarting
+Sun Mar 10 01:15:55 2019 us=773624 test2@acme.com/192.168.5.1:34543 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sun Mar 10 01:42:58 2019 us=64898 MULTI: multi_create_instance called
+Sun Mar 10 01:42:58 2019 us=64955 192.168.1.143:40618 Re-using SSL/TLS context
+Sun Mar 10 01:42:58 2019 us=65011 192.168.1.143:40618 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:42:58 2019 us=65021 192.168.1.143:40618 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:42:58 2019 us=65056 192.168.1.143:40618 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 01:42:58 2019 us=65064 192.168.1.143:40618 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 01:42:58 2019 us=65081 192.168.1.143:40618 TLS: Initial packet from [AF_INET]192.168.1.143:40618, sid=09fdd7f0 cd61d9c6
+Sun Mar 10 01:42:58 2019 us=78481 192.168.1.143:40618 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 01:42:58 2019 us=78537 192.168.1.143:40618 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:42:58 2019 us=78646 192.168.1.143:40618 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:42:58 2019 us=80137 192.168.1.143:40618 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 01:42:58 2019 us=80859 192.168.1.143:40618 peer info: IV_VER=2.4.4
+Sun Mar 10 01:42:58 2019 us=80877 192.168.1.143:40618 peer info: IV_PLAT=linux
+Sun Mar 10 01:42:58 2019 us=80888 192.168.1.143:40618 peer info: IV_PROTO=2
+Sun Mar 10 01:42:58 2019 us=80897 192.168.1.143:40618 peer info: IV_NCP=2
+Sun Mar 10 01:42:58 2019 us=80906 192.168.1.143:40618 peer info: IV_LZ4=1
+Sun Mar 10 01:42:58 2019 us=80915 192.168.1.143:40618 peer info: IV_LZ4v2=1
+Sun Mar 10 01:42:58 2019 us=80924 192.168.1.143:40618 peer info: IV_LZO=1
+Sun Mar 10 01:42:58 2019 us=80934 192.168.1.143:40618 peer info: IV_COMP_STUB=1
+Sun Mar 10 01:42:58 2019 us=80945 192.168.1.143:40618 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 01:42:58 2019 us=80956 192.168.1.143:40618 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 01:42:58 2019 us=172857 192.168.1.143:40618 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 01:42:58 2019 us=172921 192.168.1.143:40618 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 01:42:58 2019 us=172963 192.168.1.143:40618 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 01:42:58 2019 us=173002 192.168.1.143:40618 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 01:42:58 2019 us=173043 192.168.1.143:40618 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 01:42:58 2019 us=174299 192.168.1.143:40618 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 01:42:58 2019 us=174357 192.168.1.143:40618 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:40618
+Sun Mar 10 01:42:58 2019 us=174425 test2@acme.com/192.168.1.143:40618 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 01:42:58 2019 us=174506 test2@acme.com/192.168.1.143:40618 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:40618
+Sun Mar 10 01:42:58 2019 us=174532 test2@acme.com/192.168.1.143:40618 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:40618: 192.168.50.6
+Sun Mar 10 01:42:59 2019 us=382747 test2@acme.com/192.168.1.143:40618 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 01:42:59 2019 us=382959 test2@acme.com/192.168.1.143:40618 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 01:42:59 2019 us=383015 test2@acme.com/192.168.1.143:40618 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 01:42:59 2019 us=383101 test2@acme.com/192.168.1.143:40618 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:42:59 2019 us=383490 test2@acme.com/192.168.1.143:40618 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:42:59 2019 us=383555 test2@acme.com/192.168.1.143:40618 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:44:23 2019 us=484397 event_wait : Interrupted system call (code=4)
+Sun Mar 10 01:44:23 2019 us=486094 TCP/UDP: Closing socket
+Sun Mar 10 01:44:23 2019 us=486284 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:44:23 2019 us=489296 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 01:44:23 2019 us=489436 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:44:23 2019 us=496071 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 01:44:23 2019 us=496169 Closing TUN/TAP interface
+Sun Mar 10 01:44:23 2019 us=496256 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:44:23 2019 us=498272 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 01:44:23 2019 us=549508 SIGTERM[hard,] received, process exiting
+Sun Mar 10 01:44:26 2019 us=293734 Current Parameter Settings:
+Sun Mar 10 01:44:26 2019 us=293768   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 01:44:26 2019 us=293776   mode = 1
+Sun Mar 10 01:44:26 2019 us=293782   persist_config = DISABLED
+Sun Mar 10 01:44:26 2019 us=293791   persist_mode = 1
+Sun Mar 10 01:44:26 2019 us=293797   show_ciphers = DISABLED
+Sun Mar 10 01:44:26 2019 us=293803   show_digests = DISABLED
+Sun Mar 10 01:44:26 2019 us=293808   show_engines = DISABLED
+Sun Mar 10 01:44:26 2019 us=293813   genkey = DISABLED
+Sun Mar 10 01:44:26 2019 us=293819   key_pass_file = '[UNDEF]'
+Sun Mar 10 01:44:26 2019 us=293825 NOTE: --mute triggered...
+Sun Mar 10 01:44:26 2019 us=293834 231 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 01:44:26 2019 us=293841 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 01:44:26 2019 us=293851 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 01:44:26 2019 us=293931 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 01:44:26 2019 us=294277 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 01:44:26 2019 us=295276 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 01:44:26 2019 us=295290 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 01:44:26 2019 us=295303 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:44:26 2019 us=295404 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 01:44:26 2019 us=295562 TUN/TAP device tun0 opened
+Sun Mar 10 01:44:26 2019 us=295585 TUN/TAP TX queue length set to 100
+Sun Mar 10 01:44:26 2019 us=295596 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 01:44:26 2019 us=295609 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 01:44:26 2019 us=296105 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 01:44:26 2019 us=296566 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sun Mar 10 01:44:26 2019 us=296946 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 01:44:26 2019 us=297292 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:44:26 2019 us=297334 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 01:44:26 2019 us=297348 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 01:44:26 2019 us=297361 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 01:44:26 2019 us=297368 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 01:44:26 2019 us=297378 GID set to nogroup
+Sun Mar 10 01:44:26 2019 us=297401 UID set to nobody
+Sun Mar 10 01:44:26 2019 us=297411 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 01:44:26 2019 us=297433 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 01:44:26 2019 us=297443 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 01:44:26 2019 us=297450 succeeded -> ifconfig_pool_set()
+Sun Mar 10 01:44:26 2019 us=297456 IFCONFIG POOL LIST
+Sun Mar 10 01:44:26 2019 us=297462 test2@acme.com,192.168.50.4
+Sun Mar 10 01:44:26 2019 us=297485 Initialization Sequence Completed
+Sun Mar 10 01:44:33 2019 us=227005 MULTI: multi_create_instance called
+Sun Mar 10 01:44:33 2019 us=227059 192.168.1.143:42520 Re-using SSL/TLS context
+Sun Mar 10 01:44:33 2019 us=227166 192.168.1.143:42520 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:44:33 2019 us=227179 192.168.1.143:42520 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:44:33 2019 us=227225 192.168.1.143:42520 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 01:44:33 2019 us=227232 192.168.1.143:42520 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 01:44:33 2019 us=227248 192.168.1.143:42520 TLS: Initial packet from [AF_INET]192.168.1.143:42520, sid=b90ddd2b cf40c31b
+Sun Mar 10 01:44:33 2019 us=241390 192.168.1.143:42520 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 01:44:33 2019 us=241418 192.168.1.143:42520 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:44:33 2019 us=241492 192.168.1.143:42520 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:44:33 2019 us=242368 192.168.1.143:42520 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 01:44:33 2019 us=243047 192.168.1.143:42520 peer info: IV_VER=2.4.4
+Sun Mar 10 01:44:33 2019 us=243064 192.168.1.143:42520 peer info: IV_PLAT=linux
+Sun Mar 10 01:44:33 2019 us=243071 192.168.1.143:42520 peer info: IV_PROTO=2
+Sun Mar 10 01:44:33 2019 us=243077 192.168.1.143:42520 peer info: IV_NCP=2
+Sun Mar 10 01:44:33 2019 us=243082 192.168.1.143:42520 peer info: IV_LZ4=1
+Sun Mar 10 01:44:33 2019 us=243087 192.168.1.143:42520 peer info: IV_LZ4v2=1
+Sun Mar 10 01:44:33 2019 us=243093 192.168.1.143:42520 peer info: IV_LZO=1
+Sun Mar 10 01:44:33 2019 us=243098 192.168.1.143:42520 peer info: IV_COMP_STUB=1
+Sun Mar 10 01:44:33 2019 us=243104 192.168.1.143:42520 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 01:44:33 2019 us=243110 192.168.1.143:42520 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 01:44:33 2019 us=298281 192.168.1.143:42520 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 01:44:33 2019 us=298309 192.168.1.143:42520 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 01:44:33 2019 us=298326 192.168.1.143:42520 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 01:44:33 2019 us=298341 192.168.1.143:42520 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 01:44:33 2019 us=298360 192.168.1.143:42520 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 01:44:33 2019 us=299716 192.168.1.143:42520 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 01:44:33 2019 us=299773 192.168.1.143:42520 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:42520
+Sun Mar 10 01:44:33 2019 us=299844 test2@acme.com/192.168.1.143:42520 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 01:44:33 2019 us=299882 test2@acme.com/192.168.1.143:42520 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:42520
+Sun Mar 10 01:44:33 2019 us=299892 test2@acme.com/192.168.1.143:42520 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:42520: 192.168.50.6
+Sun Mar 10 01:44:34 2019 us=338967 test2@acme.com/192.168.1.143:42520 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 01:44:34 2019 us=339021 test2@acme.com/192.168.1.143:42520 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,route 192.168.5.0 255.255.255.0,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 01:44:34 2019 us=339032 test2@acme.com/192.168.1.143:42520 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 01:44:34 2019 us=339071 test2@acme.com/192.168.1.143:42520 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:44:34 2019 us=339146 test2@acme.com/192.168.1.143:42520 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:44:34 2019 us=339157 test2@acme.com/192.168.1.143:42520 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:53:26 2019 us=80238 test2@acme.com/192.168.1.143:42520 [test2@acme.com] Inactivity timeout (--ping-restart), restarting
+Sun Mar 10 01:53:26 2019 us=80356 test2@acme.com/192.168.1.143:42520 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sun Mar 10 01:59:18 2019 us=778381 event_wait : Interrupted system call (code=4)
+Sun Mar 10 01:59:18 2019 us=778760 TCP/UDP: Closing socket
+Sun Mar 10 01:59:18 2019 us=778909 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:59:18 2019 us=784286 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 01:59:18 2019 us=784390 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:59:18 2019 us=788679 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 01:59:18 2019 us=788774 Closing TUN/TAP interface
+Sun Mar 10 01:59:18 2019 us=788873 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 01:59:18 2019 us=790705 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 01:59:18 2019 us=838646 SIGTERM[hard,] received, process exiting
+Sun Mar 10 01:59:22 2019 us=127213 Current Parameter Settings:
+Sun Mar 10 01:59:22 2019 us=127322   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 01:59:22 2019 us=127354   mode = 1
+Sun Mar 10 01:59:22 2019 us=127380   persist_config = DISABLED
+Sun Mar 10 01:59:22 2019 us=127404   persist_mode = 1
+Sun Mar 10 01:59:22 2019 us=127428   show_ciphers = DISABLED
+Sun Mar 10 01:59:22 2019 us=127450   show_digests = DISABLED
+Sun Mar 10 01:59:22 2019 us=127473   show_engines = DISABLED
+Sun Mar 10 01:59:22 2019 us=127496   genkey = DISABLED
+Sun Mar 10 01:59:22 2019 us=127520   key_pass_file = '[UNDEF]'
+Sun Mar 10 01:59:22 2019 us=127544 NOTE: --mute triggered...
+Sun Mar 10 01:59:22 2019 us=127583 232 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 01:59:22 2019 us=127608 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 01:59:22 2019 us=127640 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 01:59:22 2019 us=127931 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 01:59:22 2019 us=128978 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 01:59:22 2019 us=131831 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 01:59:22 2019 us=131897 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 01:59:22 2019 us=131941 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:59:22 2019 us=132289 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 01:59:22 2019 us=132873 TUN/TAP device tun0 opened
+Sun Mar 10 01:59:22 2019 us=132959 TUN/TAP TX queue length set to 100
+Sun Mar 10 01:59:22 2019 us=133003 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 01:59:22 2019 us=133066 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 01:59:22 2019 us=134770 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 01:59:22 2019 us=136761 /sbin/ip route add 192.168.5.0/24 via 192.168.50.1
+RTNETLINK answers: File exists
+Sun Mar 10 01:59:22 2019 us=138212 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 01:59:22 2019 us=138359 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 01:59:22 2019 us=139971 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:59:22 2019 us=140143 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 01:59:22 2019 us=140214 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 01:59:22 2019 us=140261 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 01:59:22 2019 us=140285 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 01:59:22 2019 us=140325 GID set to nogroup
+Sun Mar 10 01:59:22 2019 us=140439 UID set to nobody
+Sun Mar 10 01:59:22 2019 us=140482 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 01:59:22 2019 us=140566 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 01:59:22 2019 us=140604 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 01:59:22 2019 us=140631 succeeded -> ifconfig_pool_set()
+Sun Mar 10 01:59:22 2019 us=140655 IFCONFIG POOL LIST
+Sun Mar 10 01:59:22 2019 us=140681 test2@acme.com,192.168.50.4
+Sun Mar 10 01:59:22 2019 us=140768 Initialization Sequence Completed
+Sun Mar 10 01:59:43 2019 us=51668 MULTI: multi_create_instance called
+Sun Mar 10 01:59:43 2019 us=51724 192.168.1.143:50558 Re-using SSL/TLS context
+Sun Mar 10 01:59:43 2019 us=51803 192.168.1.143:50558 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 01:59:43 2019 us=51813 192.168.1.143:50558 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:59:43 2019 us=51842 192.168.1.143:50558 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 01:59:43 2019 us=51849 192.168.1.143:50558 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 01:59:43 2019 us=51867 192.168.1.143:50558 TLS: Initial packet from [AF_INET]192.168.1.143:50558, sid=11f0dc30 ce897bff
+Sun Mar 10 01:59:43 2019 us=70795 192.168.1.143:50558 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 01:59:43 2019 us=70826 192.168.1.143:50558 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:59:43 2019 us=71075 192.168.1.143:50558 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 01:59:43 2019 us=71895 192.168.1.143:50558 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 01:59:43 2019 us=72395 192.168.1.143:50558 peer info: IV_VER=2.4.4
+Sun Mar 10 01:59:43 2019 us=72409 192.168.1.143:50558 peer info: IV_PLAT=linux
+Sun Mar 10 01:59:43 2019 us=72416 192.168.1.143:50558 peer info: IV_PROTO=2
+Sun Mar 10 01:59:43 2019 us=72421 192.168.1.143:50558 peer info: IV_NCP=2
+Sun Mar 10 01:59:43 2019 us=72426 192.168.1.143:50558 peer info: IV_LZ4=1
+Sun Mar 10 01:59:43 2019 us=72431 192.168.1.143:50558 peer info: IV_LZ4v2=1
+Sun Mar 10 01:59:43 2019 us=72436 192.168.1.143:50558 peer info: IV_LZO=1
+Sun Mar 10 01:59:43 2019 us=72441 192.168.1.143:50558 peer info: IV_COMP_STUB=1
+Sun Mar 10 01:59:43 2019 us=72447 192.168.1.143:50558 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 01:59:43 2019 us=72452 192.168.1.143:50558 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 01:59:43 2019 us=139742 192.168.1.143:50558 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 01:59:43 2019 us=139783 192.168.1.143:50558 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 01:59:43 2019 us=139815 192.168.1.143:50558 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 01:59:43 2019 us=139845 192.168.1.143:50558 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 01:59:43 2019 us=139886 192.168.1.143:50558 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 01:59:43 2019 us=140649 192.168.1.143:50558 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 01:59:43 2019 us=140688 192.168.1.143:50558 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:50558
+Sun Mar 10 01:59:43 2019 us=140740 test2@acme.com/192.168.1.143:50558 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 01:59:43 2019 us=140795 test2@acme.com/192.168.1.143:50558 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:50558
+Sun Mar 10 01:59:43 2019 us=140811 test2@acme.com/192.168.1.143:50558 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:50558: 192.168.50.6
+Sun Mar 10 01:59:44 2019 us=322314 test2@acme.com/192.168.1.143:50558 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 01:59:44 2019 us=322394 test2@acme.com/192.168.1.143:50558 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,redirect-gateway def1,route 192.168.5.0 255.255.255.0,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 01:59:44 2019 us=322402 test2@acme.com/192.168.1.143:50558 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 01:59:44 2019 us=322417 test2@acme.com/192.168.1.143:50558 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 01:59:44 2019 us=322546 test2@acme.com/192.168.1.143:50558 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:59:44 2019 us=322580 test2@acme.com/192.168.1.143:50558 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 01:59:49 2019 us=334922 test2@acme.com/192.168.1.143:50558 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 01:59:49 2019 us=335055 test2@acme.com/192.168.1.143:50558 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:10:51 2019 us=479196 test2@acme.com/192.168.1.143:50558 [test2@acme.com] Inactivity timeout (--ping-restart), restarting
+Sun Mar 10 02:10:51 2019 us=479293 test2@acme.com/192.168.1.143:50558 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sun Mar 10 02:11:42 2019 us=479249 event_wait : Interrupted system call (code=4)
+Sun Mar 10 02:11:42 2019 us=479390 TCP/UDP: Closing socket
+Sun Mar 10 02:11:42 2019 us=479439 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:11:42 2019 us=482422 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 02:11:42 2019 us=482449 Closing TUN/TAP interface
+Sun Mar 10 02:11:42 2019 us=482469 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:11:42 2019 us=483183 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 02:11:42 2019 us=515285 SIGTERM[hard,] received, process exiting
+Sun Mar 10 02:11:44 2019 us=381438 Current Parameter Settings:
+Sun Mar 10 02:11:44 2019 us=381568   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 02:11:44 2019 us=381610   mode = 1
+Sun Mar 10 02:11:44 2019 us=381647   persist_config = DISABLED
+Sun Mar 10 02:11:44 2019 us=381683   persist_mode = 1
+Sun Mar 10 02:11:44 2019 us=381736   show_ciphers = DISABLED
+Sun Mar 10 02:11:44 2019 us=381769   show_digests = DISABLED
+Sun Mar 10 02:11:44 2019 us=381803   show_engines = DISABLED
+Sun Mar 10 02:11:44 2019 us=381837   genkey = DISABLED
+Sun Mar 10 02:11:44 2019 us=381872   key_pass_file = '[UNDEF]'
+Sun Mar 10 02:11:44 2019 us=381906 NOTE: --mute triggered...
+Sun Mar 10 02:11:44 2019 us=381959 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 02:11:44 2019 us=381997 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 02:11:44 2019 us=382079 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 02:11:44 2019 us=382365 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 02:11:44 2019 us=383002 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 02:11:44 2019 us=384960 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:11:44 2019 us=385025 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:11:44 2019 us=385101 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:11:44 2019 us=385452 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 02:11:44 2019 us=386119 TUN/TAP device tun0 opened
+Sun Mar 10 02:11:44 2019 us=386217 TUN/TAP TX queue length set to 100
+Sun Mar 10 02:11:44 2019 us=386274 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 02:11:44 2019 us=386348 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 02:11:44 2019 us=388134 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 02:11:44 2019 us=390031 /sbin/ip route add 192.168.5.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 02:11:44 2019 us=391392 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:11:44 2019 us=391503 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sun Mar 10 02:11:44 2019 us=392982 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 02:11:44 2019 us=394888 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:11:44 2019 us=394995 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:11:44 2019 us=395182 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 02:11:44 2019 us=395254 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 02:11:44 2019 us=395323 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 02:11:44 2019 us=395363 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 02:11:44 2019 us=395416 GID set to nogroup
+Sun Mar 10 02:11:44 2019 us=395535 UID set to nobody
+Sun Mar 10 02:11:44 2019 us=395583 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 02:11:44 2019 us=395690 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 02:11:44 2019 us=395816 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 02:11:44 2019 us=395871 succeeded -> ifconfig_pool_set()
+Sun Mar 10 02:11:44 2019 us=395917 IFCONFIG POOL LIST
+Sun Mar 10 02:11:44 2019 us=395961 test2@acme.com,192.168.50.4
+Sun Mar 10 02:11:44 2019 us=396080 Initialization Sequence Completed
+Sun Mar 10 02:11:52 2019 us=278989 MULTI: multi_create_instance called
+Sun Mar 10 02:11:52 2019 us=279032 192.168.1.143:39925 Re-using SSL/TLS context
+Sun Mar 10 02:11:52 2019 us=279147 192.168.1.143:39925 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:11:52 2019 us=279161 192.168.1.143:39925 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:11:52 2019 us=279193 192.168.1.143:39925 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 02:11:52 2019 us=279200 192.168.1.143:39925 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 02:11:52 2019 us=279219 192.168.1.143:39925 TLS: Initial packet from [AF_INET]192.168.1.143:39925, sid=ab2d737e 0531a8b7
+Sun Mar 10 02:11:52 2019 us=292850 192.168.1.143:39925 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 02:11:52 2019 us=292881 192.168.1.143:39925 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:11:52 2019 us=292973 192.168.1.143:39925 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:11:52 2019 us=293946 192.168.1.143:39925 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 02:11:52 2019 us=294608 192.168.1.143:39925 peer info: IV_VER=2.4.4
+Sun Mar 10 02:11:52 2019 us=294628 192.168.1.143:39925 peer info: IV_PLAT=linux
+Sun Mar 10 02:11:52 2019 us=294638 192.168.1.143:39925 peer info: IV_PROTO=2
+Sun Mar 10 02:11:52 2019 us=294644 192.168.1.143:39925 peer info: IV_NCP=2
+Sun Mar 10 02:11:52 2019 us=294650 192.168.1.143:39925 peer info: IV_LZ4=1
+Sun Mar 10 02:11:52 2019 us=294656 192.168.1.143:39925 peer info: IV_LZ4v2=1
+Sun Mar 10 02:11:52 2019 us=294662 192.168.1.143:39925 peer info: IV_LZO=1
+Sun Mar 10 02:11:52 2019 us=294668 192.168.1.143:39925 peer info: IV_COMP_STUB=1
+Sun Mar 10 02:11:52 2019 us=294675 192.168.1.143:39925 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 02:11:52 2019 us=294681 192.168.1.143:39925 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 02:11:52 2019 us=363783 192.168.1.143:39925 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 02:11:52 2019 us=363839 192.168.1.143:39925 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 02:11:52 2019 us=363872 192.168.1.143:39925 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 02:11:52 2019 us=363901 192.168.1.143:39925 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 02:11:52 2019 us=363932 192.168.1.143:39925 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 02:11:52 2019 us=364829 192.168.1.143:39925 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 02:11:52 2019 us=364885 192.168.1.143:39925 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:39925
+Sun Mar 10 02:11:52 2019 us=364957 test2@acme.com/192.168.1.143:39925 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 02:11:52 2019 us=365022 test2@acme.com/192.168.1.143:39925 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:39925
+Sun Mar 10 02:11:52 2019 us=365039 test2@acme.com/192.168.1.143:39925 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:39925: 192.168.50.6
+Sun Mar 10 02:11:53 2019 us=454388 test2@acme.com/192.168.1.143:39925 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 02:11:53 2019 us=454455 test2@acme.com/192.168.1.143:39925 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,redirect-gateway def1,route 192.168.5.0 255.255.255.0,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 02:11:53 2019 us=454471 test2@acme.com/192.168.1.143:39925 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 02:11:53 2019 us=454496 test2@acme.com/192.168.1.143:39925 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:11:53 2019 us=454596 test2@acme.com/192.168.1.143:39925 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:11:53 2019 us=454616 test2@acme.com/192.168.1.143:39925 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:11:58 2019 us=466752 test2@acme.com/192.168.1.143:39925 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:12:03 2019 us=472250 test2@acme.com/192.168.1.143:39925 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:13:05 2019 us=579453 event_wait : Interrupted system call (code=4)
+Sun Mar 10 02:13:05 2019 us=580076 TCP/UDP: Closing socket
+Sun Mar 10 02:13:05 2019 us=580218 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:13:05 2019 us=582109 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 02:13:05 2019 us=582187 Closing TUN/TAP interface
+Sun Mar 10 02:13:05 2019 us=582253 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:13:05 2019 us=584051 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 02:13:05 2019 us=642744 SIGTERM[hard,] received, process exiting
+Sun Mar 10 02:13:20 2019 us=852745 Current Parameter Settings:
+Sun Mar 10 02:13:20 2019 us=852777   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 02:13:20 2019 us=852786   mode = 1
+Sun Mar 10 02:13:20 2019 us=852815   persist_config = DISABLED
+Sun Mar 10 02:13:20 2019 us=852838   persist_mode = 1
+Sun Mar 10 02:13:20 2019 us=852845   show_ciphers = DISABLED
+Sun Mar 10 02:13:20 2019 us=852852   show_digests = DISABLED
+Sun Mar 10 02:13:20 2019 us=852859   show_engines = DISABLED
+Sun Mar 10 02:13:20 2019 us=852866   genkey = DISABLED
+Sun Mar 10 02:13:20 2019 us=852873   key_pass_file = '[UNDEF]'
+Sun Mar 10 02:13:20 2019 us=852880 NOTE: --mute triggered...
+Sun Mar 10 02:13:20 2019 us=852892 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 02:13:20 2019 us=852900 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 02:13:20 2019 us=852910 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 02:13:20 2019 us=853001 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 02:13:20 2019 us=853169 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 02:13:20 2019 us=853777 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:13:20 2019 us=853794 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:13:20 2019 us=853812 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:13:20 2019 us=853920 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 02:13:20 2019 us=854124 TUN/TAP device tun0 opened
+Sun Mar 10 02:13:20 2019 us=854148 TUN/TAP TX queue length set to 100
+Sun Mar 10 02:13:20 2019 us=854161 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 02:13:20 2019 us=854179 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 02:13:20 2019 us=854583 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 02:13:20 2019 us=855078 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Sun Mar 10 02:13:20 2019 us=855532 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:13:20 2019 us=855602 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Sun Mar 10 02:13:20 2019 us=856127 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 02:13:20 2019 us=856597 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:13:20 2019 us=856639 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:13:20 2019 us=856721 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 02:13:20 2019 us=856739 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 02:13:20 2019 us=856775 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 02:13:20 2019 us=856784 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 02:13:20 2019 us=856798 GID set to nogroup
+Sun Mar 10 02:13:20 2019 us=856864 UID set to nobody
+Sun Mar 10 02:13:20 2019 us=856878 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 02:13:20 2019 us=856912 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 02:13:20 2019 us=856925 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 02:13:20 2019 us=856936 succeeded -> ifconfig_pool_set()
+Sun Mar 10 02:13:20 2019 us=856946 IFCONFIG POOL LIST
+Sun Mar 10 02:13:20 2019 us=856956 test2@acme.com,192.168.50.4
+Sun Mar 10 02:13:20 2019 us=857010 Initialization Sequence Completed
+Sun Mar 10 02:13:28 2019 us=544319 MULTI: multi_create_instance called
+Sun Mar 10 02:13:28 2019 us=544482 192.168.1.143:39653 Re-using SSL/TLS context
+Sun Mar 10 02:13:28 2019 us=544792 192.168.1.143:39653 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:13:28 2019 us=544838 192.168.1.143:39653 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:13:28 2019 us=544959 192.168.1.143:39653 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 02:13:28 2019 us=544989 192.168.1.143:39653 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 02:13:28 2019 us=545060 192.168.1.143:39653 TLS: Initial packet from [AF_INET]192.168.1.143:39653, sid=6a7f0918 214183d5
+Sun Mar 10 02:13:28 2019 us=601706 192.168.1.143:39653 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 02:13:28 2019 us=601829 192.168.1.143:39653 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:13:28 2019 us=602214 192.168.1.143:39653 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:13:28 2019 us=606338 192.168.1.143:39653 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 02:13:28 2019 us=608223 192.168.1.143:39653 peer info: IV_VER=2.4.4
+Sun Mar 10 02:13:28 2019 us=608286 192.168.1.143:39653 peer info: IV_PLAT=linux
+Sun Mar 10 02:13:28 2019 us=608316 192.168.1.143:39653 peer info: IV_PROTO=2
+Sun Mar 10 02:13:28 2019 us=608342 192.168.1.143:39653 peer info: IV_NCP=2
+Sun Mar 10 02:13:28 2019 us=608368 192.168.1.143:39653 peer info: IV_LZ4=1
+Sun Mar 10 02:13:28 2019 us=608393 192.168.1.143:39653 peer info: IV_LZ4v2=1
+Sun Mar 10 02:13:28 2019 us=608417 192.168.1.143:39653 peer info: IV_LZO=1
+Sun Mar 10 02:13:28 2019 us=608441 192.168.1.143:39653 peer info: IV_COMP_STUB=1
+Sun Mar 10 02:13:28 2019 us=608467 192.168.1.143:39653 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 02:13:28 2019 us=608492 192.168.1.143:39653 peer info: IV_TCPNL=1
+ERROR 1267 (HY000) at line 1: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+Traceback (most recent call last):
+  File "/tmp/script/auth_radius.py", line 37, in <module>
+    db_password = sys.argv[2]
+IndexError: list index out of range
+Password incorrect. User NOT authenticated
+Sun Mar 10 02:13:28 2019 us=790601 192.168.1.143:39653 WARNING: Failed running command (--auth-user-pass-verify): external program exited with error status: 1
+Sun Mar 10 02:13:28 2019 us=790781 192.168.1.143:39653 TLS Auth Error: Auth Username/Password verification failed for peer
+Sun Mar 10 02:13:28 2019 us=790874 192.168.1.143:39653 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 02:13:28 2019 us=790947 192.168.1.143:39653 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 02:13:28 2019 us=791016 192.168.1.143:39653 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 02:13:28 2019 us=791089 192.168.1.143:39653 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 02:13:28 2019 us=792934 192.168.1.143:39653 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 02:13:28 2019 us=793064 192.168.1.143:39653 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:39653
+Sun Mar 10 02:13:29 2019 us=988137 192.168.1.143:39653 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 02:13:29 2019 us=988227 192.168.1.143:39653 Delayed exit in 5 seconds
+Sun Mar 10 02:13:29 2019 us=988281 192.168.1.143:39653 SENT CONTROL [test2@acme.com]: 'AUTH_FAILED' (status=1)
+Sun Mar 10 02:13:34 2019 us=39187 192.168.1.143:39653 SIGTERM[soft,delayed-exit] received, client-instance exiting
+Sun Mar 10 02:13:43 2019 us=930598 MULTI: multi_create_instance called
+Sun Mar 10 02:13:43 2019 us=930776 192.168.1.143:58468 Re-using SSL/TLS context
+Sun Mar 10 02:13:43 2019 us=930912 192.168.1.143:58468 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:13:43 2019 us=930959 192.168.1.143:58468 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:13:43 2019 us=931080 192.168.1.143:58468 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 02:13:43 2019 us=931110 192.168.1.143:58468 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 02:13:43 2019 us=931186 192.168.1.143:58468 TLS: Initial packet from [AF_INET]192.168.1.143:58468, sid=d30c202c feb3afd3
+Sun Mar 10 02:13:43 2019 us=990905 192.168.1.143:58468 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 02:13:43 2019 us=991070 192.168.1.143:58468 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:13:43 2019 us=991607 192.168.1.143:58468 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:13:43 2019 us=997764 192.168.1.143:58468 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 02:13:44 2019 us=55 192.168.1.143:58468 peer info: IV_VER=2.4.4
+Sun Mar 10 02:13:44 2019 us=129 192.168.1.143:58468 peer info: IV_PLAT=linux
+Sun Mar 10 02:13:44 2019 us=160 192.168.1.143:58468 peer info: IV_PROTO=2
+Sun Mar 10 02:13:44 2019 us=187 192.168.1.143:58468 peer info: IV_NCP=2
+Sun Mar 10 02:13:44 2019 us=212 192.168.1.143:58468 peer info: IV_LZ4=1
+Sun Mar 10 02:13:44 2019 us=238 192.168.1.143:58468 peer info: IV_LZ4v2=1
+Sun Mar 10 02:13:44 2019 us=263 192.168.1.143:58468 peer info: IV_LZO=1
+Sun Mar 10 02:13:44 2019 us=288 192.168.1.143:58468 peer info: IV_COMP_STUB=1
+Sun Mar 10 02:13:44 2019 us=314 192.168.1.143:58468 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 02:13:44 2019 us=340 192.168.1.143:58468 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 02:13:44 2019 us=99550 192.168.1.143:58468 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 02:13:44 2019 us=99589 192.168.1.143:58468 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 02:13:44 2019 us=99621 192.168.1.143:58468 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 02:13:44 2019 us=99650 192.168.1.143:58468 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 02:13:44 2019 us=99681 192.168.1.143:58468 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 02:13:44 2019 us=100463 192.168.1.143:58468 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 02:13:44 2019 us=100501 192.168.1.143:58468 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:58468
+Sun Mar 10 02:13:44 2019 us=100551 test2@acme.com/192.168.1.143:58468 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 02:13:44 2019 us=100610 test2@acme.com/192.168.1.143:58468 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:58468
+Sun Mar 10 02:13:44 2019 us=100628 test2@acme.com/192.168.1.143:58468 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:58468: 192.168.50.6
+Sun Mar 10 02:13:45 2019 us=220133 test2@acme.com/192.168.1.143:58468 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 02:13:45 2019 us=220176 test2@acme.com/192.168.1.143:58468 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,redirect-gateway def1,route 192.168.5.0 255.255.255.0,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 02:13:45 2019 us=220198 test2@acme.com/192.168.1.143:58468 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 02:13:45 2019 us=220213 test2@acme.com/192.168.1.143:58468 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:13:45 2019 us=220266 test2@acme.com/192.168.1.143:58468 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:13:45 2019 us=220274 test2@acme.com/192.168.1.143:58468 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:13:50 2019 us=238848 test2@acme.com/192.168.1.143:58468 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:13:50 2019 us=239016 test2@acme.com/192.168.1.143:58468 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:17:12 2019 us=331912 event_wait : Interrupted system call (code=4)
+Sun Mar 10 02:17:12 2019 us=332758 TCP/UDP: Closing socket
+Sun Mar 10 02:17:12 2019 us=332958 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:17:12 2019 us=335231 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 02:17:12 2019 us=335326 Closing TUN/TAP interface
+Sun Mar 10 02:17:12 2019 us=335424 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:17:12 2019 us=337112 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 02:17:12 2019 us=372736 SIGTERM[hard,] received, process exiting
+Sun Mar 10 02:17:14 2019 us=288377 Current Parameter Settings:
+Sun Mar 10 02:17:14 2019 us=288686   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 02:17:14 2019 us=288705   mode = 1
+Sun Mar 10 02:17:14 2019 us=288717   persist_config = DISABLED
+Sun Mar 10 02:17:14 2019 us=288727   persist_mode = 1
+Sun Mar 10 02:17:14 2019 us=288737   show_ciphers = DISABLED
+Sun Mar 10 02:17:14 2019 us=288747   show_digests = DISABLED
+Sun Mar 10 02:17:14 2019 us=288757   show_engines = DISABLED
+Sun Mar 10 02:17:14 2019 us=288767   genkey = DISABLED
+Sun Mar 10 02:17:14 2019 us=288777   key_pass_file = '[UNDEF]'
+Sun Mar 10 02:17:14 2019 us=288787 NOTE: --mute triggered...
+Sun Mar 10 02:17:14 2019 us=288804 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 02:17:14 2019 us=288814 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 02:17:14 2019 us=288830 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 02:17:14 2019 us=288971 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 02:17:14 2019 us=289245 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 02:17:14 2019 us=290116 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:17:14 2019 us=290142 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 02:17:14 2019 us=290167 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:17:14 2019 us=290313 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 02:17:14 2019 us=290549 TUN/TAP device tun0 opened
+Sun Mar 10 02:17:14 2019 us=290579 TUN/TAP TX queue length set to 100
+Sun Mar 10 02:17:14 2019 us=290594 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 02:17:14 2019 us=290613 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 02:17:14 2019 us=291327 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 02:17:14 2019 us=291929 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Sun Mar 10 02:17:14 2019 us=292621 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:17:14 2019 us=292656 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Sun Mar 10 02:17:14 2019 us=293240 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 02:17:14 2019 us=293911 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 02:17:14 2019 us=293946 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:17:14 2019 us=294003 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 02:17:14 2019 us=294024 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 02:17:14 2019 us=294041 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 02:17:14 2019 us=294049 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 02:17:14 2019 us=294063 GID set to nogroup
+Sun Mar 10 02:17:14 2019 us=294095 UID set to nobody
+Sun Mar 10 02:17:14 2019 us=294110 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 02:17:14 2019 us=294142 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 02:17:14 2019 us=294156 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 02:17:14 2019 us=294166 succeeded -> ifconfig_pool_set()
+Sun Mar 10 02:17:14 2019 us=294175 IFCONFIG POOL LIST
+Sun Mar 10 02:17:14 2019 us=294184 test2@acme.com,192.168.50.4
+Sun Mar 10 02:17:14 2019 us=294218 Initialization Sequence Completed
+Sun Mar 10 02:17:23 2019 us=176815 MULTI: multi_create_instance called
+Sun Mar 10 02:17:23 2019 us=177056 192.168.1.143:41442 Re-using SSL/TLS context
+Sun Mar 10 02:17:23 2019 us=177454 192.168.1.143:41442 Control Channel MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 02:17:23 2019 us=177520 192.168.1.143:41442 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:17:23 2019 us=177644 192.168.1.143:41442 Local Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 0,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-server'
+Sun Mar 10 02:17:23 2019 us=177675 192.168.1.143:41442 Expected Remote Options String (VER=V4): 'V4,dev-type tun,link-mtu 1554,tun-mtu 1500,proto UDPv4,comp-lzo,keydir 1,cipher BF-CBC,auth SHA256,keysize 128,tls-auth,key-method 2,tls-client'
+Sun Mar 10 02:17:23 2019 us=177751 192.168.1.143:41442 TLS: Initial packet from [AF_INET]192.168.1.143:41442, sid=6352e801 703940c9
+Sun Mar 10 02:17:23 2019 us=233671 192.168.1.143:41442 VERIFY WARNING: depth=0, unable to get certificate CRL: CN=test2@acme.com
+Sun Mar 10 02:17:23 2019 us=233792 192.168.1.143:41442 VERIFY WARNING: depth=1, unable to get certificate CRL: CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:17:23 2019 us=234153 192.168.1.143:41442 VERIFY OK: depth=1, CN=Vasquita Group Certification Authority - 2019
+Sun Mar 10 02:17:23 2019 us=238179 192.168.1.143:41442 VERIFY OK: depth=0, CN=test2@acme.com
+Sun Mar 10 02:17:23 2019 us=240433 192.168.1.143:41442 peer info: IV_VER=2.4.4
+Sun Mar 10 02:17:23 2019 us=240516 192.168.1.143:41442 peer info: IV_PLAT=linux
+Sun Mar 10 02:17:23 2019 us=240593 192.168.1.143:41442 peer info: IV_PROTO=2
+Sun Mar 10 02:17:23 2019 us=240640 192.168.1.143:41442 peer info: IV_NCP=2
+Sun Mar 10 02:17:23 2019 us=240682 192.168.1.143:41442 peer info: IV_LZ4=1
+Sun Mar 10 02:17:23 2019 us=240723 192.168.1.143:41442 peer info: IV_LZ4v2=1
+Sun Mar 10 02:17:23 2019 us=240761 192.168.1.143:41442 peer info: IV_LZO=1
+Sun Mar 10 02:17:23 2019 us=240803 192.168.1.143:41442 peer info: IV_COMP_STUB=1
+Sun Mar 10 02:17:23 2019 us=240845 192.168.1.143:41442 peer info: IV_COMP_STUBv2=1
+Sun Mar 10 02:17:23 2019 us=240886 192.168.1.143:41442 peer info: IV_TCPNL=1
+
+
+Checking password with RADIUS Database password.. 
+Password is correct? True
+Password correct. User authenticated succesfully
+Sun Mar 10 02:17:23 2019 us=342315 192.168.1.143:41442 TLS: Username/Password authentication succeeded for username 'test2@acme.com' [CN SET]
+Sun Mar 10 02:17:23 2019 us=342356 192.168.1.143:41442 WARNING: 'link-mtu' is used inconsistently, local='link-mtu 1554', remote='link-mtu 1569'
+Sun Mar 10 02:17:23 2019 us=342398 192.168.1.143:41442 WARNING: 'comp-lzo' is present in local config but missing in remote config, local='comp-lzo'
+Sun Mar 10 02:17:23 2019 us=342416 192.168.1.143:41442 WARNING: 'cipher' is used inconsistently, local='cipher BF-CBC', remote='cipher AES-256-CBC'
+Sun Mar 10 02:17:23 2019 us=342435 192.168.1.143:41442 WARNING: 'keysize' is used inconsistently, local='keysize 128', remote='keysize 256'
+Sun Mar 10 02:17:23 2019 us=343083 192.168.1.143:41442 Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-ECDSA-AES256-GCM-SHA384, 4096 bit RSA
+Sun Mar 10 02:17:23 2019 us=343111 192.168.1.143:41442 [test2@acme.com] Peer Connection Initiated with [AF_INET]192.168.1.143:41442
+Sun Mar 10 02:17:23 2019 us=343143 test2@acme.com/192.168.1.143:41442 MULTI_sva: pool returned IPv4=192.168.50.6, IPv6=(Not enabled)
+Sun Mar 10 02:17:23 2019 us=343179 test2@acme.com/192.168.1.143:41442 MULTI: Learn: 192.168.50.6 -> test2@acme.com/192.168.1.143:41442
+Sun Mar 10 02:17:23 2019 us=343189 test2@acme.com/192.168.1.143:41442 MULTI: primary virtual IP for test2@acme.com/192.168.1.143:41442: 192.168.50.6
+Sun Mar 10 02:17:24 2019 us=538076 test2@acme.com/192.168.1.143:41442 PUSH: Received control message: 'PUSH_REQUEST'
+Sun Mar 10 02:17:24 2019 us=538256 test2@acme.com/192.168.1.143:41442 SENT CONTROL [test2@acme.com]: 'PUSH_REPLY,block-outside-dns,dhcp-option DNS 192.168.5.9,dhcp-option DNS 192.168.5.9,comp-lzo no,redirect-gateway def1,route 192.168.5.0 255.255.255.0,route 192.168.50.1,topology net30,ping 10,ping-restart 60,ifconfig 192.168.50.6 192.168.50.5,peer-id 0,cipher AES-256-GCM' (status=1)
+Sun Mar 10 02:17:24 2019 us=538299 test2@acme.com/192.168.1.143:41442 Data Channel: using negotiated cipher 'AES-256-GCM'
+Sun Mar 10 02:17:24 2019 us=538362 test2@acme.com/192.168.1.143:41442 Data Channel MTU parms [ L:1550 D:1450 EF:50 EB:406 ET:0 EL:3 ]
+Sun Mar 10 02:17:24 2019 us=538611 test2@acme.com/192.168.1.143:41442 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:17:24 2019 us=538650 test2@acme.com/192.168.1.143:41442 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Sun Mar 10 02:17:24 2019 us=589010 test2@acme.com/192.168.1.143:41442 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:17:29 2019 us=571778 test2@acme.com/192.168.1.143:41442 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:17:29 2019 us=571906 test2@acme.com/192.168.1.143:41442 MULTI: bad source address from client [192.168.1.143], packet dropped
+Sun Mar 10 02:22:03 2019 us=185836 event_wait : Interrupted system call (code=4)
+Sun Mar 10 02:22:03 2019 us=186339 TCP/UDP: Closing socket
+Sun Mar 10 02:22:03 2019 us=186440 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:22:03 2019 us=191096 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 02:22:03 2019 us=191192 Closing TUN/TAP interface
+Sun Mar 10 02:22:03 2019 us=191262 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 02:22:03 2019 us=193059 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 02:22:03 2019 us=226074 SIGTERM[hard,] received, process exiting
+Sun Mar 10 03:07:13 2019 us=253969 Current Parameter Settings:
+Sun Mar 10 03:07:13 2019 us=254459   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 03:07:13 2019 us=254487   mode = 1
+Sun Mar 10 03:07:13 2019 us=254493   persist_config = DISABLED
+Sun Mar 10 03:07:13 2019 us=254499   persist_mode = 1
+Sun Mar 10 03:07:13 2019 us=254504   show_ciphers = DISABLED
+Sun Mar 10 03:07:13 2019 us=254510   show_digests = DISABLED
+Sun Mar 10 03:07:13 2019 us=254515   show_engines = DISABLED
+Sun Mar 10 03:07:13 2019 us=254536   genkey = DISABLED
+Sun Mar 10 03:07:13 2019 us=254542   key_pass_file = '[UNDEF]'
+Sun Mar 10 03:07:13 2019 us=254552 NOTE: --mute triggered...
+Sun Mar 10 03:07:13 2019 us=254562 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 03:07:13 2019 us=254579 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 03:07:13 2019 us=254587 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 03:07:13 2019 us=254682 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 03:07:13 2019 us=255411 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 03:07:13 2019 us=256550 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:07:13 2019 us=256563 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:07:13 2019 us=256597 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 03:07:13 2019 us=256700 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 03:07:13 2019 us=256936 TUN/TAP device tun0 opened
+Sun Mar 10 03:07:13 2019 us=256955 TUN/TAP TX queue length set to 100
+Sun Mar 10 03:07:13 2019 us=256979 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 03:07:13 2019 us=257011 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 03:07:13 2019 us=257517 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 03:07:13 2019 us=258030 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Sun Mar 10 03:07:13 2019 us=258570 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:07:13 2019 us=258593 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Sun Mar 10 03:07:13 2019 us=258951 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 03:07:13 2019 us=259272 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:07:13 2019 us=259291 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 03:07:13 2019 us=259329 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 03:07:13 2019 us=259344 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 03:07:13 2019 us=259356 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 03:07:13 2019 us=259362 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 03:07:13 2019 us=259372 GID set to nogroup
+Sun Mar 10 03:07:13 2019 us=259395 UID set to nobody
+Sun Mar 10 03:07:13 2019 us=259406 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 03:07:13 2019 us=259430 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 03:07:13 2019 us=259622 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 03:07:13 2019 us=259633 succeeded -> ifconfig_pool_set()
+Sun Mar 10 03:07:13 2019 us=259641 IFCONFIG POOL LIST
+Sun Mar 10 03:07:13 2019 us=259648 test2@acme.com,192.168.50.4
+Sun Mar 10 03:07:13 2019 us=259675 Initialization Sequence Completed
+Sun Mar 10 03:20:11 2019 us=154409 event_wait : Interrupted system call (code=4)
+Sun Mar 10 03:20:11 2019 us=154610 TCP/UDP: Closing socket
+Sun Mar 10 03:20:11 2019 us=154683 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:20:11 2019 us=155638 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 03:20:11 2019 us=155682 Closing TUN/TAP interface
+Sun Mar 10 03:20:11 2019 us=155720 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:20:11 2019 us=158898 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 03:20:11 2019 us=188783 SIGTERM[hard,] received, process exiting
+Sun Mar 10 03:21:29 2019 us=920866 Current Parameter Settings:
+Sun Mar 10 03:21:29 2019 us=920897   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 03:21:29 2019 us=920906   mode = 1
+Sun Mar 10 03:21:29 2019 us=920913   persist_config = DISABLED
+Sun Mar 10 03:21:29 2019 us=920921   persist_mode = 1
+Sun Mar 10 03:21:29 2019 us=921001   show_ciphers = DISABLED
+Sun Mar 10 03:21:29 2019 us=921010   show_digests = DISABLED
+Sun Mar 10 03:21:29 2019 us=921018   show_engines = DISABLED
+Sun Mar 10 03:21:29 2019 us=921025   genkey = DISABLED
+Sun Mar 10 03:21:29 2019 us=921033   key_pass_file = '[UNDEF]'
+Sun Mar 10 03:21:29 2019 us=921040 NOTE: --mute triggered...
+Sun Mar 10 03:21:29 2019 us=921052 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 03:21:29 2019 us=921062 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 03:21:29 2019 us=921072 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 03:21:29 2019 us=921153 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 03:21:29 2019 us=921289 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 03:21:29 2019 us=921699 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:21:29 2019 us=921713 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:21:29 2019 us=921732 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 03:21:29 2019 us=921880 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 03:21:29 2019 us=922067 TUN/TAP device tun0 opened
+Sun Mar 10 03:21:29 2019 us=922104 TUN/TAP TX queue length set to 100
+Sun Mar 10 03:21:29 2019 us=922118 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 03:21:29 2019 us=922135 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 03:21:29 2019 us=922579 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 03:21:29 2019 us=923043 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Sun Mar 10 03:21:29 2019 us=923430 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:21:29 2019 us=923450 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Sun Mar 10 03:21:29 2019 us=923860 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 03:21:29 2019 us=924408 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:21:29 2019 us=924433 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 03:21:29 2019 us=924472 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 03:21:29 2019 us=924487 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 03:21:29 2019 us=924500 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 03:21:29 2019 us=924507 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 03:21:29 2019 us=924517 GID set to nogroup
+Sun Mar 10 03:21:29 2019 us=924543 UID set to nobody
+Sun Mar 10 03:21:29 2019 us=924553 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 03:21:29 2019 us=924576 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 03:21:29 2019 us=924586 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 03:21:29 2019 us=924594 succeeded -> ifconfig_pool_set()
+Sun Mar 10 03:21:29 2019 us=924601 IFCONFIG POOL LIST
+Sun Mar 10 03:21:29 2019 us=924607 test2@acme.com,192.168.50.4
+Sun Mar 10 03:21:29 2019 us=924633 Initialization Sequence Completed
+Sun Mar 10 03:26:49 2019 us=282917 event_wait : Interrupted system call (code=4)
+Sun Mar 10 03:26:49 2019 us=283327 TCP/UDP: Closing socket
+Sun Mar 10 03:26:49 2019 us=283476 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:26:49 2019 us=290515 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 03:26:49 2019 us=290617 Closing TUN/TAP interface
+Sun Mar 10 03:26:49 2019 us=290714 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:26:49 2019 us=297490 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 03:26:49 2019 us=325997 SIGTERM[hard,] received, process exiting
+Sun Mar 10 03:31:24 2019 us=899024 Current Parameter Settings:
+Sun Mar 10 03:31:24 2019 us=899174   config = '/etc/openvpn/openvpn.conf'
+Sun Mar 10 03:31:24 2019 us=899216   mode = 1
+Sun Mar 10 03:31:24 2019 us=899266   persist_config = DISABLED
+Sun Mar 10 03:31:24 2019 us=899310   persist_mode = 1
+Sun Mar 10 03:31:24 2019 us=899365   show_ciphers = DISABLED
+Sun Mar 10 03:31:24 2019 us=899392   show_digests = DISABLED
+Sun Mar 10 03:31:24 2019 us=899419   show_engines = DISABLED
+Sun Mar 10 03:31:24 2019 us=899477   genkey = DISABLED
+Sun Mar 10 03:31:24 2019 us=899508   key_pass_file = '[UNDEF]'
+Sun Mar 10 03:31:24 2019 us=899566 NOTE: --mute triggered...
+Sun Mar 10 03:31:24 2019 us=899610 233 variation(s) on previous 10 message(s) suppressed by --mute
+Sun Mar 10 03:31:24 2019 us=899668 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sun Mar 10 03:31:24 2019 us=899706 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sun Mar 10 03:31:24 2019 us=929108 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sun Mar 10 03:31:24 2019 us=929899 Diffie-Hellman initialized with 2048 bit key
+Sun Mar 10 03:31:24 2019 us=931757 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:31:24 2019 us=931836 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sun Mar 10 03:31:24 2019 us=931916 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sun Mar 10 03:31:24 2019 us=932462 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sun Mar 10 03:31:24 2019 us=933046 TUN/TAP device tun0 opened
+Sun Mar 10 03:31:24 2019 us=933126 TUN/TAP TX queue length set to 100
+Sun Mar 10 03:31:24 2019 us=933178 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sun Mar 10 03:31:24 2019 us=933244 /sbin/ip link set dev tun0 up mtu 1500
+Sun Mar 10 03:31:24 2019 us=937072 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sun Mar 10 03:31:24 2019 us=939127 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Sun Mar 10 03:31:24 2019 us=941050 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:31:24 2019 us=941177 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Sun Mar 10 03:31:24 2019 us=943001 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Sun Mar 10 03:31:24 2019 us=944891 ERROR: Linux route add command failed: external program exited with error status: 2
+Sun Mar 10 03:31:24 2019 us=945009 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sun Mar 10 03:31:24 2019 us=945157 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sun Mar 10 03:31:24 2019 us=945219 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sun Mar 10 03:31:24 2019 us=945336 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sun Mar 10 03:31:24 2019 us=945379 UDPv4 link remote: [AF_UNSPEC]
+Sun Mar 10 03:31:24 2019 us=945435 GID set to nogroup
+Sun Mar 10 03:31:24 2019 us=945655 UID set to nobody
+Sun Mar 10 03:31:24 2019 us=945728 MULTI: multi_init called, r=256 v=256
+Sun Mar 10 03:31:24 2019 us=945860 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sun Mar 10 03:31:24 2019 us=945925 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Sun Mar 10 03:31:24 2019 us=945974 succeeded -> ifconfig_pool_set()
+Sun Mar 10 03:31:24 2019 us=946019 IFCONFIG POOL LIST
+Sun Mar 10 03:31:24 2019 us=946061 test2@acme.com,192.168.50.4
+Sun Mar 10 03:31:24 2019 us=946209 Initialization Sequence Completed
+Sun Mar 10 03:33:48 2019 us=755293 event_wait : Interrupted system call (code=4)
+Sun Mar 10 03:33:48 2019 us=755473 TCP/UDP: Closing socket
+Sun Mar 10 03:33:48 2019 us=755533 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:33:48 2019 us=757226 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sun Mar 10 03:33:48 2019 us=757340 Closing TUN/TAP interface
+Sun Mar 10 03:33:48 2019 us=757413 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sun Mar 10 03:33:48 2019 us=758421 Linux ip addr del failed: external program exited with error status: 2
+Sun Mar 10 03:33:48 2019 us=778733 SIGTERM[hard,] received, process exiting
+Mon Mar 11 00:17:25 2019 us=682143 Current Parameter Settings:
+Mon Mar 11 00:17:25 2019 us=682578   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 00:17:25 2019 us=682613   mode = 1
+Mon Mar 11 00:17:25 2019 us=682638   persist_config = DISABLED
+Mon Mar 11 00:17:25 2019 us=682662   persist_mode = 1
+Mon Mar 11 00:17:25 2019 us=682685   show_ciphers = DISABLED
+Mon Mar 11 00:17:25 2019 us=682707   show_digests = DISABLED
+Mon Mar 11 00:17:25 2019 us=682730   show_engines = DISABLED
+Mon Mar 11 00:17:25 2019 us=682753   genkey = DISABLED
+Mon Mar 11 00:17:25 2019 us=682776   key_pass_file = '[UNDEF]'
+Mon Mar 11 00:17:25 2019 us=682798 NOTE: --mute triggered...
+Mon Mar 11 00:17:25 2019 us=682837 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 00:17:25 2019 us=682862 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 00:17:25 2019 us=682895 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 00:17:25 2019 us=683165 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 00:17:25 2019 us=685016 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 00:17:25 2019 us=688793 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:17:25 2019 us=688858 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:17:25 2019 us=688917 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 00:17:25 2019 us=689286 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 00:17:25 2019 us=689875 TUN/TAP device tun0 opened
+Mon Mar 11 00:17:25 2019 us=689949 TUN/TAP TX queue length set to 100
+Mon Mar 11 00:17:25 2019 us=689988 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 00:17:25 2019 us=690040 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 00:17:25 2019 us=691744 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 00:17:25 2019 us=693515 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 00:17:25 2019 us=695281 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:17:25 2019 us=695392 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 00:17:25 2019 us=697202 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 00:17:25 2019 us=699016 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:17:25 2019 us=699123 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 00:17:25 2019 us=699277 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 00:17:25 2019 us=699340 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 00:17:25 2019 us=699390 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 00:17:25 2019 us=699421 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 00:17:25 2019 us=699465 GID set to nogroup
+Mon Mar 11 00:17:25 2019 us=699563 UID set to nobody
+Mon Mar 11 00:17:25 2019 us=699609 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 00:17:25 2019 us=699703 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 00:17:25 2019 us=700063 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 00:17:25 2019 us=700107 succeeded -> ifconfig_pool_set()
+Mon Mar 11 00:17:25 2019 us=700138 IFCONFIG POOL LIST
+Mon Mar 11 00:17:25 2019 us=700168 test2@acme.com,192.168.50.4
+Mon Mar 11 00:17:25 2019 us=700273 Initialization Sequence Completed
+Mon Mar 11 00:17:29 2019 us=296746 event_wait : Interrupted system call (code=4)
+Mon Mar 11 00:17:29 2019 us=296885 TCP/UDP: Closing socket
+Mon Mar 11 00:17:29 2019 us=296927 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:17:29 2019 us=297519 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 00:17:29 2019 us=297541 Closing TUN/TAP interface
+Mon Mar 11 00:17:29 2019 us=297559 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:17:29 2019 us=298101 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 00:17:29 2019 us=320830 SIGINT[hard,] received, process exiting
+Mon Mar 11 00:17:30 2019 us=106718 Current Parameter Settings:
+Mon Mar 11 00:17:30 2019 us=106751   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 00:17:30 2019 us=106761   mode = 1
+Mon Mar 11 00:17:30 2019 us=106770   persist_config = DISABLED
+Mon Mar 11 00:17:30 2019 us=106779   persist_mode = 1
+Mon Mar 11 00:17:30 2019 us=106788   show_ciphers = DISABLED
+Mon Mar 11 00:17:30 2019 us=106796   show_digests = DISABLED
+Mon Mar 11 00:17:30 2019 us=106805   show_engines = DISABLED
+Mon Mar 11 00:17:30 2019 us=106814   genkey = DISABLED
+Mon Mar 11 00:17:30 2019 us=106823   key_pass_file = '[UNDEF]'
+Mon Mar 11 00:17:30 2019 us=106831 NOTE: --mute triggered...
+Mon Mar 11 00:17:30 2019 us=106846 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 00:17:30 2019 us=106856 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 00:17:30 2019 us=106871 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 00:17:30 2019 us=106992 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 00:17:30 2019 us=107193 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 00:17:30 2019 us=107864 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:17:30 2019 us=107888 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:17:30 2019 us=107912 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 00:17:30 2019 us=108058 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 00:17:30 2019 us=108286 TUN/TAP device tun0 opened
+Mon Mar 11 00:17:30 2019 us=108319 TUN/TAP TX queue length set to 100
+Mon Mar 11 00:17:30 2019 us=108337 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 00:17:30 2019 us=108362 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 00:17:30 2019 us=108973 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 00:17:30 2019 us=109552 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 00:17:30 2019 us=110054 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:17:30 2019 us=110090 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 00:17:30 2019 us=110547 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 00:17:30 2019 us=111082 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:17:30 2019 us=111116 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 00:17:30 2019 us=111176 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 00:17:30 2019 us=111196 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 00:17:30 2019 us=111209 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 00:17:30 2019 us=111217 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 00:17:30 2019 us=111231 GID set to nogroup
+Mon Mar 11 00:17:30 2019 us=111260 UID set to nobody
+Mon Mar 11 00:17:30 2019 us=111276 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 00:17:30 2019 us=111303 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 00:17:30 2019 us=111332 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 00:17:30 2019 us=111341 succeeded -> ifconfig_pool_set()
+Mon Mar 11 00:17:30 2019 us=111349 IFCONFIG POOL LIST
+Mon Mar 11 00:17:30 2019 us=111361 test2@acme.com,192.168.50.4
+Mon Mar 11 00:17:30 2019 us=111397 Initialization Sequence Completed
+Mon Mar 11 00:18:31 2019 us=730313 Current Parameter Settings:
+Mon Mar 11 00:18:31 2019 us=730422   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 00:18:31 2019 us=730450   mode = 1
+Mon Mar 11 00:18:31 2019 us=730474   persist_config = DISABLED
+Mon Mar 11 00:18:31 2019 us=730497   persist_mode = 1
+Mon Mar 11 00:18:31 2019 us=730519   show_ciphers = DISABLED
+Mon Mar 11 00:18:31 2019 us=730540   show_digests = DISABLED
+Mon Mar 11 00:18:31 2019 us=730562   show_engines = DISABLED
+Mon Mar 11 00:18:31 2019 us=730583   genkey = DISABLED
+Mon Mar 11 00:18:31 2019 us=730605   key_pass_file = '[UNDEF]'
+Mon Mar 11 00:18:31 2019 us=730648 NOTE: --mute triggered...
+Mon Mar 11 00:18:31 2019 us=730697 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 00:18:31 2019 us=730721 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 00:18:31 2019 us=730753 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 00:18:31 2019 us=731050 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 00:18:31 2019 us=731577 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 00:18:31 2019 us=733355 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:18:31 2019 us=733413 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:18:31 2019 us=733469 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 00:18:31 2019 us=733827 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 00:18:31 2019 us=734444 TUN/TAP device tun0 opened
+Mon Mar 11 00:18:31 2019 us=734528 TUN/TAP TX queue length set to 100
+Mon Mar 11 00:18:31 2019 us=734572 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 00:18:31 2019 us=734624 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 00:18:31 2019 us=736500 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 00:18:31 2019 us=738071 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 00:18:31 2019 us=739811 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:18:31 2019 us=739909 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 00:18:31 2019 us=741336 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 00:18:31 2019 us=742777 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:18:31 2019 us=742873 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 00:18:31 2019 us=743022 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 00:18:31 2019 us=743080 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 00:18:31 2019 us=743127 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 00:18:31 2019 us=743151 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 00:18:31 2019 us=743188 GID set to nogroup
+Mon Mar 11 00:18:31 2019 us=743282 UID set to nobody
+Mon Mar 11 00:18:31 2019 us=743321 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 00:18:31 2019 us=743418 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 00:18:31 2019 us=743457 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 00:18:31 2019 us=743484 succeeded -> ifconfig_pool_set()
+Mon Mar 11 00:18:31 2019 us=743512 IFCONFIG POOL LIST
+Mon Mar 11 00:18:31 2019 us=743538 test2@acme.com,192.168.50.4
+Mon Mar 11 00:18:31 2019 us=743628 Initialization Sequence Completed
+Mon Mar 11 00:18:34 2019 us=453484 event_wait : Interrupted system call (code=4)
+Mon Mar 11 00:18:34 2019 us=453676 TCP/UDP: Closing socket
+Mon Mar 11 00:18:34 2019 us=453727 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:18:34 2019 us=454751 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 00:18:34 2019 us=454791 Closing TUN/TAP interface
+Mon Mar 11 00:18:34 2019 us=454811 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:18:34 2019 us=455788 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 00:18:34 2019 us=490771 SIGTERM[hard,] received, process exiting
+Mon Mar 11 00:19:53 2019 us=551001 Current Parameter Settings:
+Mon Mar 11 00:19:53 2019 us=551380   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 00:19:53 2019 us=551394   mode = 1
+Mon Mar 11 00:19:53 2019 us=551404   persist_config = DISABLED
+Mon Mar 11 00:19:53 2019 us=551412   persist_mode = 1
+Mon Mar 11 00:19:53 2019 us=551421   show_ciphers = DISABLED
+Mon Mar 11 00:19:53 2019 us=551430   show_digests = DISABLED
+Mon Mar 11 00:19:53 2019 us=551439   show_engines = DISABLED
+Mon Mar 11 00:19:53 2019 us=551448   genkey = DISABLED
+Mon Mar 11 00:19:53 2019 us=551457   key_pass_file = '[UNDEF]'
+Mon Mar 11 00:19:53 2019 us=551465 NOTE: --mute triggered...
+Mon Mar 11 00:19:53 2019 us=551480 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 00:19:53 2019 us=551491 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 00:19:53 2019 us=551504 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 00:19:53 2019 us=551622 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 00:19:53 2019 us=552221 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 00:19:53 2019 us=553429 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:19:53 2019 us=553450 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:19:53 2019 us=553472 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 00:19:53 2019 us=553595 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 00:19:53 2019 us=553810 TUN/TAP device tun0 opened
+Mon Mar 11 00:19:53 2019 us=553837 TUN/TAP TX queue length set to 100
+Mon Mar 11 00:19:53 2019 us=553853 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 00:19:53 2019 us=553873 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 00:19:53 2019 us=555266 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 00:19:53 2019 us=555956 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 00:19:53 2019 us=556457 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:19:53 2019 us=556482 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 00:19:53 2019 us=557056 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 00:19:53 2019 us=557572 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:19:53 2019 us=557599 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 00:19:53 2019 us=557653 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 00:19:53 2019 us=557668 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 00:19:53 2019 us=557679 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 00:19:53 2019 us=557686 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 00:19:53 2019 us=557695 GID set to nogroup
+Mon Mar 11 00:19:53 2019 us=557719 UID set to nobody
+Mon Mar 11 00:19:53 2019 us=557730 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 00:19:53 2019 us=557773 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 00:19:53 2019 us=557935 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 00:19:53 2019 us=557957 succeeded -> ifconfig_pool_set()
+Mon Mar 11 00:19:53 2019 us=557964 IFCONFIG POOL LIST
+Mon Mar 11 00:19:53 2019 us=557971 test2@acme.com,192.168.50.4
+Mon Mar 11 00:19:53 2019 us=557997 Initialization Sequence Completed
+Mon Mar 11 00:21:07 2019 us=730538 event_wait : Interrupted system call (code=4)
+Mon Mar 11 00:21:07 2019 us=734131 TCP/UDP: Closing socket
+Mon Mar 11 00:21:07 2019 us=734208 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:21:07 2019 us=735846 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 00:21:07 2019 us=735879 Closing TUN/TAP interface
+Mon Mar 11 00:21:07 2019 us=735899 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:21:07 2019 us=736370 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 00:21:07 2019 us=772953 SIGTERM[hard,] received, process exiting
+Mon Mar 11 00:21:35 2019 us=32150 Current Parameter Settings:
+Mon Mar 11 00:21:35 2019 us=32257   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 00:21:35 2019 us=32288   mode = 1
+Mon Mar 11 00:21:35 2019 us=32314   persist_config = DISABLED
+Mon Mar 11 00:21:35 2019 us=32337   persist_mode = 1
+Mon Mar 11 00:21:35 2019 us=32361   show_ciphers = DISABLED
+Mon Mar 11 00:21:35 2019 us=32383   show_digests = DISABLED
+Mon Mar 11 00:21:35 2019 us=32406   show_engines = DISABLED
+Mon Mar 11 00:21:35 2019 us=32429   genkey = DISABLED
+Mon Mar 11 00:21:35 2019 us=32452   key_pass_file = '[UNDEF]'
+Mon Mar 11 00:21:35 2019 us=32475 NOTE: --mute triggered...
+Mon Mar 11 00:21:35 2019 us=32513 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 00:21:35 2019 us=32538 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 00:21:35 2019 us=32570 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 00:21:35 2019 us=32862 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 00:21:35 2019 us=33585 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 00:21:35 2019 us=35407 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:21:35 2019 us=35471 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 00:21:35 2019 us=35528 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 00:21:35 2019 us=35870 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 00:21:35 2019 us=36421 TUN/TAP device tun0 opened
+Mon Mar 11 00:21:35 2019 us=36497 TUN/TAP TX queue length set to 100
+Mon Mar 11 00:21:35 2019 us=36545 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 00:21:35 2019 us=36600 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 00:21:35 2019 us=39056 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 00:21:35 2019 us=40824 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 00:21:35 2019 us=42271 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:21:35 2019 us=42363 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 00:21:35 2019 us=44294 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 00:21:35 2019 us=46885 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 00:21:35 2019 us=46991 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 00:21:35 2019 us=47135 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 00:21:35 2019 us=47206 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 00:21:35 2019 us=47258 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 00:21:35 2019 us=47362 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 00:21:35 2019 us=47462 GID set to nogroup
+Mon Mar 11 00:21:35 2019 us=47559 UID set to nobody
+Mon Mar 11 00:21:35 2019 us=47600 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 00:21:35 2019 us=47687 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 00:21:35 2019 us=47727 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 00:21:35 2019 us=47755 succeeded -> ifconfig_pool_set()
+Mon Mar 11 00:21:35 2019 us=47781 IFCONFIG POOL LIST
+Mon Mar 11 00:21:35 2019 us=47807 test2@acme.com,192.168.50.4
+Mon Mar 11 00:21:35 2019 us=47897 Initialization Sequence Completed
+Mon Mar 11 00:25:48 2019 us=176867 event_wait : Interrupted system call (code=4)
+Mon Mar 11 00:25:48 2019 us=179817 TCP/UDP: Closing socket
+Mon Mar 11 00:25:48 2019 us=179895 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:25:48 2019 us=181300 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 00:25:48 2019 us=181321 Closing TUN/TAP interface
+Mon Mar 11 00:25:48 2019 us=181339 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 00:25:48 2019 us=181841 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 00:25:48 2019 us=212348 SIGTERM[hard,] received, process exiting
+Mon Mar 11 18:05:11 2019 us=202243 Current Parameter Settings:
+Mon Mar 11 18:05:11 2019 us=202770   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 18:05:11 2019 us=202799   mode = 1
+Mon Mar 11 18:05:11 2019 us=202818   persist_config = DISABLED
+Mon Mar 11 18:05:11 2019 us=202836   persist_mode = 1
+Mon Mar 11 18:05:11 2019 us=202854   show_ciphers = DISABLED
+Mon Mar 11 18:05:11 2019 us=202870   show_digests = DISABLED
+Mon Mar 11 18:05:11 2019 us=202882   show_engines = DISABLED
+Mon Mar 11 18:05:11 2019 us=202919   genkey = DISABLED
+Mon Mar 11 18:05:11 2019 us=202945   key_pass_file = '[UNDEF]'
+Mon Mar 11 18:05:11 2019 us=202959 NOTE: --mute triggered...
+Mon Mar 11 18:05:11 2019 us=202989 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 18:05:11 2019 us=203014 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 18:05:11 2019 us=203044 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 18:05:11 2019 us=203382 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 18:05:11 2019 us=205118 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 18:05:11 2019 us=209101 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 18:05:11 2019 us=209138 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 18:05:11 2019 us=209165 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 18:05:11 2019 us=209490 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 18:05:11 2019 us=209812 TUN/TAP device tun0 opened
+Mon Mar 11 18:05:11 2019 us=209850 TUN/TAP TX queue length set to 100
+Mon Mar 11 18:05:11 2019 us=209945 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 18:05:11 2019 us=209968 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 18:05:11 2019 us=214438 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 18:05:11 2019 us=216286 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 18:05:11 2019 us=217727 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 18:05:11 2019 us=217766 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 18:05:11 2019 us=221342 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 18:05:11 2019 us=224376 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 18:05:11 2019 us=224427 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 18:05:11 2019 us=224512 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 18:05:11 2019 us=224546 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 18:05:11 2019 us=224570 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 18:05:11 2019 us=224583 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 18:05:11 2019 us=224603 GID set to nogroup
+Mon Mar 11 18:05:11 2019 us=224657 UID set to nobody
+Mon Mar 11 18:05:11 2019 us=224677 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 18:05:11 2019 us=224721 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 18:05:11 2019 us=224950 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 18:05:11 2019 us=224970 succeeded -> ifconfig_pool_set()
+Mon Mar 11 18:05:11 2019 us=224982 IFCONFIG POOL LIST
+Mon Mar 11 18:05:11 2019 us=224994 test2@acme.com,192.168.50.4
+Mon Mar 11 18:05:11 2019 us=225042 Initialization Sequence Completed
+Mon Mar 11 18:08:13 2019 us=332060 event_wait : Interrupted system call (code=4)
+Mon Mar 11 18:08:13 2019 us=335089 TCP/UDP: Closing socket
+Mon Mar 11 18:08:13 2019 us=335243 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 18:08:13 2019 us=341763 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 18:08:13 2019 us=341828 Closing TUN/TAP interface
+Mon Mar 11 18:08:13 2019 us=341900 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 18:08:13 2019 us=343394 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 18:08:13 2019 us=387470 SIGTERM[hard,] received, process exiting
+Mon Mar 11 18:09:12 2019 us=216933 Current Parameter Settings:
+Mon Mar 11 18:09:12 2019 us=217283   config = '/etc/openvpn/openvpn.conf'
+Mon Mar 11 18:09:12 2019 us=217325   mode = 1
+Mon Mar 11 18:09:12 2019 us=217353   persist_config = DISABLED
+Mon Mar 11 18:09:12 2019 us=217379   persist_mode = 1
+Mon Mar 11 18:09:12 2019 us=217405   show_ciphers = DISABLED
+Mon Mar 11 18:09:12 2019 us=217430   show_digests = DISABLED
+Mon Mar 11 18:09:12 2019 us=217455   show_engines = DISABLED
+Mon Mar 11 18:09:12 2019 us=217479   genkey = DISABLED
+Mon Mar 11 18:09:12 2019 us=217505   key_pass_file = '[UNDEF]'
+Mon Mar 11 18:09:12 2019 us=217529 NOTE: --mute triggered...
+Mon Mar 11 18:09:12 2019 us=217567 233 variation(s) on previous 10 message(s) suppressed by --mute
+Mon Mar 11 18:09:12 2019 us=217596 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Mon Mar 11 18:09:12 2019 us=217630 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Mon Mar 11 18:09:12 2019 us=217885 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Mon Mar 11 18:09:12 2019 us=218607 Diffie-Hellman initialized with 2048 bit key
+Mon Mar 11 18:09:12 2019 us=223193 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 18:09:12 2019 us=223416 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Mon Mar 11 18:09:12 2019 us=223578 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Mon Mar 11 18:09:12 2019 us=224219 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Mon Mar 11 18:09:12 2019 us=224814 TUN/TAP device tun0 opened
+Mon Mar 11 18:09:12 2019 us=224990 TUN/TAP TX queue length set to 100
+Mon Mar 11 18:09:12 2019 us=225164 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Mon Mar 11 18:09:12 2019 us=225291 /sbin/ip link set dev tun0 up mtu 1500
+Mon Mar 11 18:09:12 2019 us=226687 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Mon Mar 11 18:09:12 2019 us=227991 /sbin/ip route add 192.168.5.0/24 via 192.168.5.1
+RTNETLINK answers: File exists
+Mon Mar 11 18:09:12 2019 us=232954 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 18:09:12 2019 us=233308 /sbin/ip route add 192.168.50.0/24 via 192.168.50.1
+Mon Mar 11 18:09:12 2019 us=236091 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+RTNETLINK answers: File exists
+Mon Mar 11 18:09:12 2019 us=246708 ERROR: Linux route add command failed: external program exited with error status: 2
+Mon Mar 11 18:09:12 2019 us=246804 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Mon Mar 11 18:09:12 2019 us=246934 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Mon Mar 11 18:09:12 2019 us=247010 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Mon Mar 11 18:09:12 2019 us=247074 UDPv4 link local (bound): [AF_INET][undef]:1194
+Mon Mar 11 18:09:12 2019 us=247112 UDPv4 link remote: [AF_UNSPEC]
+Mon Mar 11 18:09:12 2019 us=247154 GID set to nogroup
+Mon Mar 11 18:09:12 2019 us=247242 UID set to nobody
+Mon Mar 11 18:09:12 2019 us=247277 MULTI: multi_init called, r=256 v=256
+Mon Mar 11 18:09:12 2019 us=247352 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Mon Mar 11 18:09:12 2019 us=247385 ifconfig_pool_read(), in='test2@acme.com,192.168.50.4', TODO: IPv6
+Mon Mar 11 18:09:12 2019 us=247412 succeeded -> ifconfig_pool_set()
+Mon Mar 11 18:09:12 2019 us=247435 IFCONFIG POOL LIST
+Mon Mar 11 18:09:12 2019 us=247461 test2@acme.com,192.168.50.4
+Mon Mar 11 18:09:12 2019 us=247545 Initialization Sequence Completed
+Mon Mar 11 18:11:44 2019 us=257260 event_wait : Interrupted system call (code=4)
+Mon Mar 11 18:11:44 2019 us=259512 TCP/UDP: Closing socket
+Mon Mar 11 18:11:44 2019 us=259728 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 18:11:44 2019 us=278226 ERROR: Linux route delete command failed: external program exited with error status: 2
+Mon Mar 11 18:11:44 2019 us=278315 Closing TUN/TAP interface
+Mon Mar 11 18:11:44 2019 us=278387 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Mon Mar 11 18:11:44 2019 us=280706 Linux ip addr del failed: external program exited with error status: 2
+Mon Mar 11 18:11:44 2019 us=317353 SIGTERM[hard,] received, process exiting

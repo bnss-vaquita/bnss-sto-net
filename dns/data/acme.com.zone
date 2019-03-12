@@ -19,9 +19,12 @@ acme.com.        1800    IN    NS        ns1.acme.com.
 ; pointer records
 ; -----------------------------------------------------------------------------
 ns1                 1800    IN    A         DNS_SERVER_IP
-www                 1800    IN    A         192.168.1.50
 vpnserver           1800    IN    A         OPENVPN_VLAN1
 mysql               1800    IN    A         DB_VLAN1
+auth                1800    IN    A         AUTH_SERVER_VLAN1
+elastic             1800    IN    A         ELASTIC_VLAN1
+kibana              1800    IN    A         KIBANA_VLAN1
+logstash            1800    IN    A         LOGSTASH_VLAN1
 
 ; -----------------------------------------------------------------------------
 ; cname records
