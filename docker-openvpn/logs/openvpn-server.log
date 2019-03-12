@@ -1,0 +1,206 @@
+Sat Mar  9 22:27:22 2019 us=252466 Current Parameter Settings:
+Sat Mar  9 22:27:22 2019 us=252571   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 22:27:22 2019 us=252599   mode = 1
+Sat Mar  9 22:27:22 2019 us=252623   persist_config = DISABLED
+Sat Mar  9 22:27:22 2019 us=252645   persist_mode = 1
+Sat Mar  9 22:27:22 2019 us=252666   show_ciphers = DISABLED
+Sat Mar  9 22:27:22 2019 us=252687   show_digests = DISABLED
+Sat Mar  9 22:27:22 2019 us=252707   show_engines = DISABLED
+Sat Mar  9 22:27:22 2019 us=252728   genkey = DISABLED
+Sat Mar  9 22:27:22 2019 us=252749   key_pass_file = '[UNDEF]'
+Sat Mar  9 22:27:22 2019 us=252770 NOTE: --mute triggered...
+Sat Mar  9 22:27:22 2019 us=252806 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 22:27:22 2019 us=252831 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 22:27:22 2019 us=252862 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 22:27:22 2019 us=253131 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 22:27:22 2019 us=253622 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 22:27:22 2019 us=254783 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 22:27:22 2019 us=254833 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 22:27:22 2019 us=254872 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sat Mar  9 22:27:22 2019 us=255231 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 22:27:22 2019 us=255766 TUN/TAP device tun0 opened
+Sat Mar  9 22:27:22 2019 us=255841 TUN/TAP TX queue length set to 100
+Sat Mar  9 22:27:22 2019 us=255881 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 22:27:22 2019 us=255932 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 22:27:22 2019 us=257493 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 22:27:22 2019 us=259142 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 22:27:22 2019 us=260559 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 22:27:22 2019 us=262136 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 22:27:22 2019 us=262313 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 22:27:22 2019 us=262371 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 22:27:22 2019 us=262418 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 22:27:22 2019 us=262441 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 22:27:22 2019 us=262479 GID set to nogroup
+Sat Mar  9 22:27:22 2019 us=262568 UID set to nobody
+Sat Mar  9 22:27:22 2019 us=262606 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 22:27:22 2019 us=262692 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 22:27:22 2019 us=262733 IFCONFIG POOL LIST
+Sat Mar  9 22:27:22 2019 us=262832 Initialization Sequence Completed
+Sat Mar  9 22:27:31 2019 us=747806 event_wait : Interrupted system call (code=4)
+Sat Mar  9 22:27:31 2019 us=749206 TCP/UDP: Closing socket
+Sat Mar  9 22:27:31 2019 us=749367 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 22:27:31 2019 us=751044 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 22:27:31 2019 us=751130 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 22:27:31 2019 us=752672 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 22:27:31 2019 us=752747 Closing TUN/TAP interface
+Sat Mar  9 22:27:31 2019 us=752815 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 22:27:31 2019 us=754349 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 22:27:31 2019 us=792089 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:07:01 2019 us=18276 Current Parameter Settings:
+Sat Mar  9 23:07:01 2019 us=18311   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:07:01 2019 us=18318   mode = 1
+Sat Mar  9 23:07:01 2019 us=18324   persist_config = DISABLED
+Sat Mar  9 23:07:01 2019 us=18329   persist_mode = 1
+Sat Mar  9 23:07:01 2019 us=18334   show_ciphers = DISABLED
+Sat Mar  9 23:07:01 2019 us=18339   show_digests = DISABLED
+Sat Mar  9 23:07:01 2019 us=18345   show_engines = DISABLED
+Sat Mar  9 23:07:01 2019 us=18350   genkey = DISABLED
+Sat Mar  9 23:07:01 2019 us=18355   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:07:01 2019 us=18361 NOTE: --mute triggered...
+Sat Mar  9 23:07:01 2019 us=18370 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:07:01 2019 us=18376 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:07:01 2019 us=18383 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:07:01 2019 us=18464 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:07:01 2019 us=18622 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:07:01 2019 us=18912 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 23:07:01 2019 us=18924 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 23:07:01 2019 us=18936 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:07:01 2019 us=19021 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:07:01 2019 us=19184 TUN/TAP device tun0 opened
+Sat Mar  9 23:07:01 2019 us=19204 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:07:01 2019 us=19214 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:07:01 2019 us=19227 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:07:01 2019 us=19682 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:07:01 2019 us=20130 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:07:01 2019 us=20553 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:07:01 2019 us=20933 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:07:01 2019 us=20977 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:07:01 2019 us=20992 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:07:01 2019 us=21005 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:07:01 2019 us=21011 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:07:01 2019 us=21021 GID set to nogroup
+Sat Mar  9 23:07:01 2019 us=21045 UID set to nobody
+Sat Mar  9 23:07:01 2019 us=21055 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:07:01 2019 us=21078 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:07:01 2019 us=21090 IFCONFIG POOL LIST
+Sat Mar  9 23:07:01 2019 us=21111 Initialization Sequence Completed
+Sat Mar  9 23:07:35 2019 us=154061 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:34145
+Sat Mar  9 23:07:37 2019 us=326788 TLS Error: cannot locate HMAC in incoming packet from [AF_INET]192.168.5.1:34145
+Sat Mar  9 23:08:08 2019 us=221282 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:08:08 2019 us=221611 TCP/UDP: Closing socket
+Sat Mar  9 23:08:08 2019 us=221656 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:08 2019 us=222196 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:08:08 2019 us=222223 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:08 2019 us=222679 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:08:08 2019 us=222703 Closing TUN/TAP interface
+Sat Mar  9 23:08:08 2019 us=222725 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:08 2019 us=223205 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:08:08 2019 us=251884 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:08:38 2019 us=684570 Current Parameter Settings:
+Sat Mar  9 23:08:38 2019 us=684611   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:08:38 2019 us=684622   mode = 1
+Sat Mar  9 23:08:38 2019 us=684631   persist_config = DISABLED
+Sat Mar  9 23:08:38 2019 us=684639   persist_mode = 1
+Sat Mar  9 23:08:38 2019 us=684647   show_ciphers = DISABLED
+Sat Mar  9 23:08:38 2019 us=684655   show_digests = DISABLED
+Sat Mar  9 23:08:38 2019 us=684663   show_engines = DISABLED
+Sat Mar  9 23:08:38 2019 us=684671   genkey = DISABLED
+Sat Mar  9 23:08:38 2019 us=684679   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:08:38 2019 us=684687 NOTE: --mute triggered...
+Sat Mar  9 23:08:38 2019 us=684701 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:08:38 2019 us=684710 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:08:38 2019 us=684726 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:08:38 2019 us=684868 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:08:38 2019 us=685136 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:08:38 2019 us=685595 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 23:08:38 2019 us=685614 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat Mar  9 23:08:38 2019 us=685630 TLS-Auth MTU parms [ L:1622 D:1172 EF:78 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:08:38 2019 us=685762 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:08:38 2019 us=685999 TUN/TAP device tun0 opened
+Sat Mar  9 23:08:38 2019 us=686029 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:08:38 2019 us=686045 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:08:38 2019 us=686064 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:08:38 2019 us=686704 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:08:38 2019 us=687372 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:08:38 2019 us=688032 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:08:38 2019 us=688557 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:08:38 2019 us=688642 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:08:38 2019 us=688674 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:08:38 2019 us=688700 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:08:38 2019 us=688714 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:08:38 2019 us=688735 GID set to nogroup
+Sat Mar  9 23:08:38 2019 us=688776 UID set to nobody
+Sat Mar  9 23:08:38 2019 us=688797 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:08:38 2019 us=688844 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:08:38 2019 us=688867 IFCONFIG POOL LIST
+Sat Mar  9 23:08:38 2019 us=688908 Initialization Sequence Completed
+Sat Mar  9 23:08:48 2019 us=21513 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:08:48 2019 us=21643 TCP/UDP: Closing socket
+Sat Mar  9 23:08:48 2019 us=21695 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:48 2019 us=22805 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:08:48 2019 us=22840 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:48 2019 us=23277 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:08:48 2019 us=23301 Closing TUN/TAP interface
+Sat Mar  9 23:08:48 2019 us=23321 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:08:48 2019 us=23839 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:08:48 2019 us=51801 SIGTERM[hard,] received, process exiting
+Sat Mar  9 23:09:17 2019 us=654359 Current Parameter Settings:
+Sat Mar  9 23:09:17 2019 us=654396   config = '/etc/openvpn/openvpn.conf'
+Sat Mar  9 23:09:17 2019 us=654407   mode = 1
+Sat Mar  9 23:09:17 2019 us=654415   persist_config = DISABLED
+Sat Mar  9 23:09:17 2019 us=654424   persist_mode = 1
+Sat Mar  9 23:09:17 2019 us=654432   show_ciphers = DISABLED
+Sat Mar  9 23:09:17 2019 us=654439   show_digests = DISABLED
+Sat Mar  9 23:09:17 2019 us=654447   show_engines = DISABLED
+Sat Mar  9 23:09:17 2019 us=654459   genkey = DISABLED
+Sat Mar  9 23:09:17 2019 us=654479   key_pass_file = '[UNDEF]'
+Sat Mar  9 23:09:17 2019 us=654495 NOTE: --mute triggered...
+Sat Mar  9 23:09:17 2019 us=654518 230 variation(s) on previous 10 message(s) suppressed by --mute
+Sat Mar  9 23:09:17 2019 us=654534 OpenVPN 2.4.6 x86_64-alpine-linux-musl [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Nov 26 2018
+Sat Mar  9 23:09:17 2019 us=654553 library versions: OpenSSL 1.1.1a  20 Nov 2018, LZO 2.10
+Sat Mar  9 23:09:17 2019 us=654684 NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+Sat Mar  9 23:09:17 2019 us=654880 Diffie-Hellman initialized with 2048 bit key
+Sat Mar  9 23:09:17 2019 us=655322 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:09:17 2019 us=655341 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Sat Mar  9 23:09:17 2019 us=655356 TLS-Auth MTU parms [ L:1622 D:1184 EF:66 EB:0 ET:0 EL:3 ]
+Sat Mar  9 23:09:17 2019 us=655485 ROUTE_GATEWAY 192.168.5.1/255.255.255.0 IFACE=eth0 HWADDR=02:42:c0:a8:05:0b
+Sat Mar  9 23:09:17 2019 us=655707 TUN/TAP device tun0 opened
+Sat Mar  9 23:09:17 2019 us=655736 TUN/TAP TX queue length set to 100
+Sat Mar  9 23:09:17 2019 us=655752 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Sat Mar  9 23:09:17 2019 us=655778 /sbin/ip link set dev tun0 up mtu 1500
+Sat Mar  9 23:09:17 2019 us=656415 /sbin/ip addr add dev tun0 local 192.168.50.1 peer 192.168.50.2
+Sat Mar  9 23:09:17 2019 us=657001 /sbin/ip route add 192.168.254.0/24 via 192.168.50.2
+Sat Mar  9 23:09:17 2019 us=657502 /sbin/ip route add 192.168.50.0/24 via 192.168.50.2
+Sat Mar  9 23:09:17 2019 us=658095 Data Channel MTU parms [ L:1622 D:1450 EF:122 EB:406 ET:0 EL:3 ]
+Sat Mar  9 23:09:17 2019 us=658186 Could not determine IPv4/IPv6 protocol. Using AF_INET
+Sat Mar  9 23:09:17 2019 us=658209 Socket Buffers: R=[212992->212992] S=[212992->212992]
+Sat Mar  9 23:09:17 2019 us=658227 UDPv4 link local (bound): [AF_INET][undef]:1194
+Sat Mar  9 23:09:17 2019 us=658237 UDPv4 link remote: [AF_UNSPEC]
+Sat Mar  9 23:09:17 2019 us=658251 GID set to nogroup
+Sat Mar  9 23:09:17 2019 us=658285 UID set to nobody
+Sat Mar  9 23:09:17 2019 us=658300 MULTI: multi_init called, r=256 v=256
+Sat Mar  9 23:09:17 2019 us=658333 IFCONFIG POOL: base=192.168.50.4 size=62, ipv6=0
+Sat Mar  9 23:09:17 2019 us=658353 IFCONFIG POOL LIST
+Sat Mar  9 23:09:17 2019 us=658387 Initialization Sequence Completed
+Sat Mar  9 23:09:28 2019 us=821171 event_wait : Interrupted system call (code=4)
+Sat Mar  9 23:09:28 2019 us=821585 TCP/UDP: Closing socket
+Sat Mar  9 23:09:28 2019 us=821766 /sbin/ip route del 192.168.254.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:09:28 2019 us=823499 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:09:28 2019 us=823619 /sbin/ip route del 192.168.50.0/24
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:09:28 2019 us=825239 ERROR: Linux route delete command failed: external program exited with error status: 2
+Sat Mar  9 23:09:28 2019 us=825311 Closing TUN/TAP interface
+Sat Mar  9 23:09:28 2019 us=825378 /sbin/ip addr del dev tun0 local 192.168.50.1 peer 192.168.50.2
+RTNETLINK answers: Operation not permitted
+Sat Mar  9 23:09:28 2019 us=827369 Linux ip addr del failed: external program exited with error status: 2
+Sat Mar  9 23:09:28 2019 us=855080 SIGTERM[hard,] received, process exiting
